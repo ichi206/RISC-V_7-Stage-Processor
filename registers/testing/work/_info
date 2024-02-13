@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/users/nick/documents/ee469/lab1/code/registers/testing
+Xdefinitions_sv_unit
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1707866273
+!i10b 1
+!s100 VEXTLQHFjOIj``WKeZo;g1
+I5H3;]:czoo7UGKeaihdmR2
+V5H3;]:czoo7UGKeaihdmR2
+!i103 1
+S1
+R0
+w1707857339
+8../../common/definitions.sv
+Z2 F../../common/definitions.sv
+Z3 L0 10
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1707866273.000000
+!s107 ../../common/definitions.sv|
+!s90 -reportprogress|300|../../common/definitions.sv|
+!i113 1
+Z6 tCvgOpt 0
+vprogram_counter
+R1
+DXx4 work 23 program_counter_sv_unit 0 22 X8kQ@dfKO@d;c[^kU]J1Y0
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 lblDEP7znECBd0ZiKUicc2
+I]=eLHZ0G<00NNjWlLKkBh1
+!s105 program_counter_sv_unit
+S1
+R0
+Z8 w1707866038
+Z9 8../program_counter.sv
+Z10 F../program_counter.sv
+L0 4
+R4
+R5
+Z11 !s107 ..\..\common\definitions.sv|../program_counter.sv|
+Z12 !s90 -reportprogress|300|../program_counter.sv|
+!i113 1
+R6
+Xprogram_counter_sv_unit
+R1
+VX8kQ@dfKO@d;c[^kU]J1Y0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @E`5LGjc2e6GmFdUQ4a1V3
+IX8kQ@dfKO@d;c[^kU]J1Y0
+!i103 1
+S1
+R0
+R8
+R9
+R10
+Z13 F..\..\common\definitions.sv
+R3
+R4
+R5
+R11
+R12
+!i113 1
+R6
+vregisters
+R1
+DXx4 work 17 registers_sv_unit 0 22 JTBE[OanYLTWojc@Kg4B]3
+R7
+r1
+!s85 0
+31
+!i10b 1
+!s100 6H2XU2H>efgRT?kGagf2O0
+IMzR>aCkCKS4z7<WXRLLF]2
+!s105 registers_sv_unit
+S1
+R0
+Z14 w1707866084
+Z15 8../registers.sv
+Z16 F../registers.sv
+L0 4
+R4
+R5
+Z17 !s107 ..\..\common\definitions.sv|../registers.sv|
+Z18 !s90 -reportprogress|300|../registers.sv|
+!i113 1
+R6
+Xregisters_sv_unit
+R1
+VJTBE[OanYLTWojc@Kg4B]3
+r1
+!s85 0
+31
+!i10b 1
+!s100 m=`DJJ:Doe?i=>WCFaZ_B1
+IJTBE[OanYLTWojc@Kg4B]3
+!i103 1
+S1
+R0
+R14
+R15
+R16
+R13
+R3
+R4
+R5
+R17
+R18
+!i113 1
+R6
+vsimple_add_test
+R1
+DXx4 work 23 simple_add_test_sv_unit 0 22 @;KX`4SU_FmDZbP>[kTK[2
+R7
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZhRP0KP0=O_mLiFeaW=bY0
+IWH=G1:MIJn@Q8mYJkV16V1
+!s105 simple_add_test_sv_unit
+S1
+R0
+Z19 w1707866098
+Z20 8simple_add_test.sv
+Z21 Fsimple_add_test.sv
+L0 4
+R4
+R5
+Z22 !s107 ../../common/definitions.sv|simple_add_test.sv|
+Z23 !s90 -reportprogress|300|simple_add_test.sv|
+!i113 1
+R6
+Xsimple_add_test_sv_unit
+R1
+V@;KX`4SU_FmDZbP>[kTK[2
+r1
+!s85 0
+31
+!i10b 1
+!s100 P7S>XDk2YGJbSza5Vkb>O2
+I@;KX`4SU_FmDZbP>[kTK[2
+!i103 1
+S1
+R0
+R19
+R20
+R21
+R2
+R3
+R4
+R5
+R22
+R23
+!i113 1
+R6
