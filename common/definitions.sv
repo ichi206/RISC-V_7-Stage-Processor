@@ -6,7 +6,7 @@
 `define tag_size 5 // number of bits to distinguish 32 registers
 
 `define memory_size 1024 // in bytes
-`define memory_bits $clog2(MEMORY_SIZE)
+`define memory_bits $clog2(`memory_size)
 
 `define BOOT_ADDRESS 0 // address to boot to
 
