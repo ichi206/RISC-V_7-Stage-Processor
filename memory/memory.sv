@@ -1,10 +1,10 @@
 `include "../common/definitions.sv"
 
 
-module memory
+module memory #(parameter b0_mif, b1_mif, b2_mif, b3_mif)
 (
-	input  word_address long_addr,
-	input  load_type how_much,
+	input word_address long_addr,
+	input load_type how_much,
 	
 	output word content
 );
@@ -16,6 +16,14 @@ module memory
 	byte mem_b1 [0 : `memory_size / 4 - 1];
 	byte mem_b2 [0 : `memory_size / 4 - 1];
 	byte mem_b3 [0 : `memory_size / 4 - 1];
+
+	initial
+	begin
+		$readmemb(b0_mif, mem_b0);
+		$readmemb(b1_mif, mem_b1);
+		$readmemb(b2_mif, mem_b2);
+		$readmemb(b3_mif, mem_b3);
+	end
 	
 	always_comb 
 	begin
