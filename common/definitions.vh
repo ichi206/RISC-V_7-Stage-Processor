@@ -14,4 +14,9 @@ typedef logic [`tag_size - 1 : 0] tag; // used to access registers
 typedef logic [`word_size - 1 : 0] word;
 typedef logic [`word_address_size - 1 : 0] word_address;
 
+typedef logic [1 : 0] load_type;
+`define BYTE 0
+`define HALFWORD 1
+`define WORD 2
+
 `endif

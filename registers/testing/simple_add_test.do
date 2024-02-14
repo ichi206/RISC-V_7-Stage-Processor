@@ -2,7 +2,6 @@
 vlib work
 
 # Compile Verilog
-vlog ../../common/definitions.sv
 vlog ../registers.sv
 vlog ../program_counter.sv
 vlog simple_add_test.sv

@@ -1,7 +1,7 @@
-`include "../common/definitions.sv"
+`include "../common/definitions.vh"
 
 
-module memory #(parameter b0_mif, b1_mif, b2_mif, b3_mif)
+module memory #(parameter b0_mif, b1_mif, b2_mif, b3_mif, mif_size)
 (
 	input word_address long_addr,
 	input load_type how_much,
@@ -19,23 +19,23 @@ module memory #(parameter b0_mif, b1_mif, b2_mif, b3_mif)
 
 	initial
 	begin
-		$readmemb(b0_mif, mem_b0);
-		$readmemb(b1_mif, mem_b1);
-		$readmemb(b2_mif, mem_b2);
-		$readmemb(b3_mif, mem_b3);
+		$readmemb(b0_mif, mem_b0, 0, mif_size - 1);
+		$readmemb(b1_mif, mem_b1, 0, mif_size - 1);
+		$readmemb(b2_mif, mem_b2, 0, mif_size - 1);
+		$readmemb(b3_mif, mem_b3, 0, mif_size - 1);
 	end
 	
 	always_comb 
 	begin
 		case (how_much)
 			
-			BYTE:
+			`BYTE:
 				content = 0; // TODO
 			
-			HALFWORD:
+			`HALFWORD:
 				content = 0; // TODO
 			
-			WORD:
+			`WORD:
 				content = {mem_b0[word_addr], mem_b1[word_addr], mem_b2[word_addr], mem_b3[word_addr]};
 		
 		endcase

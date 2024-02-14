@@ -1,4 +1,4 @@
-`include "../common/definitions.sv"
+`include "../common/definitions.vh"
 
 
 module program_counter
