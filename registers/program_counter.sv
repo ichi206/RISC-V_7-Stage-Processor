@@ -3,8 +3,8 @@
 
 module program_counter
 (
-	input  logic clock, reset, jump,
-	input  word_address jump_location,
+	input logic clock, reset, write_back, jump,
+	input word_address jump_location,
 	
 	output word_address next_instruction_addr
 );
@@ -13,10 +13,13 @@ module program_counter
 	begin
 		if (reset)
 			next_instruction_addr = `BOOT_ADDRESS;
-		if (jump)
-			next_instruction_addr = jump_location;
-		else
-			next_instruction_addr += 4;
+		else if (write_back)
+		begin
+			if (jump)
+				next_instruction_addr = jump_location;
+			else
+				next_instruction_addr += 4;
+		end
 	end
 
 endmodule
