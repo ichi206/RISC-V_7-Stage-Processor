@@ -21,36 +21,32 @@ module registers_only_test ();
 	registers test_r (.*);
 	
 	logic reset, jump;
-	word_address jump_location, next_instruction;
+	word_address jump_location, next_instruction_addr;
 	
 	program_counter test_pc (.*);
 
-	word_address long_addr;
-	assign long_addr = next_instruction;
-	load_type how_much;
-	assign how_much = `WORD;
-	word content;
+	logic read;
+	word_address long_instruction_addr;
+	assign long_instruction_addr = next_instruction_addr;
+	//load_type how_much;
+	//assign how_much = `WORD;
+	word instruction;
 	
-	memory #(
-		"b0_registers_only.mif",
-		"b1_registers_only.mif",
-		"b2_registers_only.mif",
-		"b3_registers_only.mif", 19)
-		test_mem (.*);
+	instruction_memory #("registers_only.mif", 19) test_isntr_mem (.*);
 	
 	logic read_from_mem;
-	assign rs1 = read_from_mem ? content[12 : 8]  : 0;
-	assign rs2 = read_from_mem ? content[20 : 16] : 0;
-	assign rd  = read_from_mem ? content[28 : 24] : 1;
+	assign rs1 = read ? instruction[12 : 8]  : 0;
+	assign rs2 = read ? instruction[20 : 16] : 0;
+	assign rd  = read ? instruction[28 : 24] : 1;
 	
 	initial
 	begin
-		add = 0; read_from_mem = 0; write_to_rd = 1;
+		add = 0; read = 0; write_to_rd = 1;
 		@(posedge clock);
 		reset = 1;
 		@(posedge clock);
-		reset = 0; read_from_mem = 1; add = 1;
-		repeat(19) @(posedge clock); // read through all instructions
+		reset = 0; read = 1; add = 1;
+		repeat(20) @(posedge clock); // read through all instructions
 		$stop;
 	end
 

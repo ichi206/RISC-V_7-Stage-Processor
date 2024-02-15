@@ -4,7 +4,7 @@ vlib work
 # Compile Verilog
 vlog ../../registers/registers.sv
 vlog ../../registers/program_counter.sv
-vlog ../memory.sv
+vlog ../instruction_memory.sv
 vlog registers_only_test.sv
 
 # Call vsim to invoke simulator

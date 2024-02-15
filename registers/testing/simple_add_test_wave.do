@@ -12,7 +12,7 @@ add wave -noupdate -radix unsigned /simple_add_test/rs2_value
 add wave -noupdate -radix unsigned /simple_add_test/rd_value
 add wave -noupdate /simple_add_test/jump
 add wave -noupdate -radix unsigned /simple_add_test/jump_location
-add wave -noupdate -radix unsigned /simple_add_test/next_instruction
+add wave -noupdate -radix unsigned /simple_add_test/next_instruction_addr
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {68236 ps} 0}
 quietly wave cursor active 1

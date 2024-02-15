@@ -21,7 +21,7 @@ module simple_add_test ();
 	registers test_r (.*);
 	
 	logic reset, jump;
-	word_address jump_location, next_instruction;
+	word_address jump_location, next_instruction_addr;
 	
 	program_counter test_pc (.*);
 	

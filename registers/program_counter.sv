@@ -6,17 +6,17 @@ module program_counter
 	input  logic clock, reset, jump,
 	input  word_address jump_location,
 	
-	output word_address next_instruction
+	output word_address next_instruction_addr
 );
 
 	always_ff @(posedge clock)
 	begin
 		if (reset)
-			next_instruction = `BOOT_ADDRESS;
+			next_instruction_addr = `BOOT_ADDRESS;
 		if (jump)
-			next_instruction = jump_location;
+			next_instruction_addr = jump_location;
 		else
-			next_instruction += 4;
+			next_instruction_addr += 4;
 	end
 
 endmodule
