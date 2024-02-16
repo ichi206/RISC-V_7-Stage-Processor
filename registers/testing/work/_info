@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/users/nick/documents/ee469/lab1/code/registers/testing
+Xdefinitions_sv_unit
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1707866273
+!i10b 1
+!s100 VEXTLQHFjOIj``WKeZo;g1
+I5H3;]:czoo7UGKeaihdmR2
+V5H3;]:czoo7UGKeaihdmR2
+!i103 1
+S1
+R0
+w1707857339
+8../../common/definitions.sv
+F../../common/definitions.sv
+L0 10
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1707866273.000000
+!s107 ../../common/definitions.sv|
+!s90 -reportprogress|300|../../common/definitions.sv|
+!i113 1
+Z3 tCvgOpt 0
+vprogram_counter
+R1
+DXx4 work 23 program_counter_sv_unit 0 22 <U>G_zJWCdUPO;JX6O2fi1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 O3G@?83RFI`DQg=5lPQL;1
+IH3IZgPDjhKDbUloHkQLE70
+!s105 program_counter_sv_unit
+S1
+Z5 dC:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/registers/testing
+Z6 w1707961527
+Z7 8../program_counter.sv
+Z8 F../program_counter.sv
+L0 4
+R2
+Z9 !s108 1707961684.000000
+Z10 !s107 ..\..\common\definitions.vh|../program_counter.sv|
+Z11 !s90 -reportprogress|300|../program_counter.sv|
+!i113 1
+R3
+Xprogram_counter_sv_unit
+R1
+V<U>G_zJWCdUPO;JX6O2fi1
+r1
+!s85 0
+31
+!i10b 1
+!s100 nTmf?F^LJ24h7bk8blGH^0
+I<U>G_zJWCdUPO;JX6O2fi1
+!i103 1
+S1
+R5
+R6
+R7
+R8
+Z12 F..\..\common\definitions.vh
+Z13 L0 16
+R2
+R9
+R10
+R11
+!i113 1
+R3
+vregisters
+R1
+DXx4 work 17 registers_sv_unit 0 22 X]:=_A]WV0Ra[CJaDTG`H3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 6H2XU2H>efgRT?kGagf2O0
+IMzR>aCkCKS4z7<WXRLLF]2
+!s105 registers_sv_unit
+S1
+R5
+w1707888678
+Z14 8../registers.sv
+Z15 F../registers.sv
+L0 4
+R2
+R9
+Z16 !s107 ..\..\common\definitions.vh|../registers.sv|
+Z17 !s90 -reportprogress|300|../registers.sv|
+!i113 1
+R3
+Xregisters_sv_unit
+R1
+VX]:=_A]WV0Ra[CJaDTG`H3
+r1
+!s85 0
+31
+!i10b 1
+!s100 XaJK47BCBeo:CbCLoTjMP3
+IX]:=_A]WV0Ra[CJaDTG`H3
+!i103 1
+S1
+R5
+w1707959811
+R14
+R15
+R12
+R13
+R2
+R9
+R16
+R17
+!i113 1
+R3
+vsimple_add_test
+R1
+DXx4 work 23 simple_add_test_sv_unit 0 22 OQ;>Nm[mzYz:>YeeV[3H]1
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 _]W6?llc3kglKaFP9JE2=1
+I9[bhiYdlS2LLe8_EoLgm43
+!s105 simple_add_test_sv_unit
+S1
+R5
+Z18 w1707961576
+Z19 8simple_add_test.sv
+Z20 Fsimple_add_test.sv
+L0 4
+R2
+R9
+Z21 !s107 ../../common/definitions.vh|simple_add_test.sv|
+Z22 !s90 -reportprogress|300|simple_add_test.sv|
+!i113 1
+R3
+Xsimple_add_test_sv_unit
+R1
+VOQ;>Nm[mzYz:>YeeV[3H]1
+r1
+!s85 0
+31
+!i10b 1
+!s100 H1?dBam1fm89cOSkYUL8A1
+IOQ;>Nm[mzYz:>YeeV[3H]1
+!i103 1
+S1
+R5
+R18
+R19
+R20
+F../../common/definitions.vh
+R13
+R2
+R9
+R21
+R22
+!i113 1
+R3
