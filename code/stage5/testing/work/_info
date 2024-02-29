@@ -1,0 +1,217 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/users/nick/documents/ee469/lab1/code/registers/testing
+Xdata_memory_read_interface_sv_unit
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Vg]h6^nO@MF;683hGIIj970
+r1
+!s85 0
+31
+!i10b 1
+!s100 YDEeW<d[KaZUh<UW<YXLd0
+Ig]h6^nO@MF;683hGIIj970
+!i103 1
+S1
+Z2 dc:/users/nick/documents/ee469/lab1/code/stage5/testing
+Z3 w1709177928
+Z4 8../data_memory_read_interface.sv
+Z5 F../data_memory_read_interface.sv
+Z6 F..\..\common\definitions.vh
+Z7 L0 22
+Z8 OV;L;10.5b;63
+Z9 !s108 1709177931.000000
+Z10 !s107 ..\..\common\definitions.vh|../data_memory_read_interface.sv|
+Z11 !s90 -reportprogress|300|../data_memory_read_interface.sv|
+!i113 1
+Z12 tCvgOpt 0
+vdata_read_interface
+R1
+DXx4 work 34 data_memory_read_interface_sv_unit 0 22 g]h6^nO@MF;683hGIIj970
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 i4aI=d]LO9Em2eXNHWz6L2
+IC5MbWHcgUk7n22MRiOEbX2
+!s105 data_memory_read_interface_sv_unit
+S1
+R2
+R3
+R4
+R5
+L0 38
+R8
+R9
+R10
+R11
+!i113 1
+R12
+Xdefinitions_sv_unit
+R1
+!s110 1707866273
+!i10b 1
+!s100 VEXTLQHFjOIj``WKeZo;g1
+I5H3;]:czoo7UGKeaihdmR2
+V5H3;]:czoo7UGKeaihdmR2
+!i103 1
+S1
+R0
+w1707857339
+8../../common/definitions.sv
+F../../common/definitions.sv
+L0 10
+R8
+r1
+!s85 0
+31
+!s108 1707866273.000000
+!s107 ../../common/definitions.sv|
+!s90 -reportprogress|300|../../common/definitions.sv|
+!i113 1
+R12
+vprogram_counter
+R1
+DXx4 work 23 program_counter_sv_unit 0 22 =kFO^j:^1XeWbF^?YCCR93
+R13
+r1
+!s85 0
+31
+!i10b 1
+!s100 >LR@8fIK^j95Me97G5Z3U3
+IJfTNN5Zc1DWG[5<c<i3mN2
+!s105 program_counter_sv_unit
+S1
+R2
+w1709170174
+Z14 8../program_counter.sv
+Z15 F../program_counter.sv
+L0 4
+R8
+Z16 !s108 1709179957.000000
+Z17 !s107 ..\..\common\definitions.vh|../program_counter.sv|
+Z18 !s90 -reportprogress|300|../program_counter.sv|
+!i113 1
+R12
+Xprogram_counter_sv_unit
+R1
+V=kFO^j:^1XeWbF^?YCCR93
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]dR:Z>Uj>Q9T2jnQ1A9Vz1
+I=kFO^j:^1XeWbF^?YCCR93
+!i103 1
+S1
+R2
+w1709175403
+R14
+R15
+R6
+R7
+R8
+R16
+R17
+R18
+!i113 1
+R12
+vregisters
+R1
+DXx4 work 17 registers_sv_unit 0 22 584<<IIDh:kdZ6Cb^ReO`0
+R13
+r1
+!s85 0
+31
+!i10b 1
+!s100 CiPmM`ZNbZjYQkWD2eoEJ0
+IEnoc19_ed2R[W1?hEa<Xm2
+!s105 registers_sv_unit
+S1
+R2
+Z19 w1709179137
+Z20 8../registers.sv
+Z21 F../registers.sv
+L0 4
+R8
+R16
+Z22 !s107 ..\..\common\definitions.vh|../registers.sv|
+Z23 !s90 -reportprogress|300|../registers.sv|
+!i113 1
+R12
+Xregisters_sv_unit
+R1
+V584<<IIDh:kdZ6Cb^ReO`0
+r1
+!s85 0
+31
+!i10b 1
+!s100 k:bE>SdMG]H8M1emF91NW3
+I584<<IIDh:kdZ6Cb^ReO`0
+!i103 1
+S1
+R2
+R19
+R20
+R21
+R6
+R7
+R8
+R16
+R22
+R23
+!i113 1
+R12
+vsimple_add_test
+R1
+DXx4 work 23 simple_add_test_sv_unit 0 22 ^fB_T_3j=N<1LE1?o3H[d1
+R13
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^WkE8BXTAmIHb4=9ZcUJn0
+Ic=ojR`=NK1kYb9BOf60mS3
+!s105 simple_add_test_sv_unit
+S1
+R2
+Z24 w1709179954
+Z25 8simple_add_test.sv
+Z26 Fsimple_add_test.sv
+L0 4
+R8
+R16
+Z27 !s107 ../../common/definitions.vh|simple_add_test.sv|
+Z28 !s90 -reportprogress|300|simple_add_test.sv|
+!i113 1
+R12
+Xsimple_add_test_sv_unit
+R1
+V^fB_T_3j=N<1LE1?o3H[d1
+r1
+!s85 0
+31
+!i10b 1
+!s100 B]ATZaUgaC_=^5Jid=[`50
+I^fB_T_3j=N<1LE1?o3H[d1
+!i103 1
+S1
+R2
+R24
+R25
+R26
+F../../common/definitions.vh
+R7
+R8
+R16
+R27
+R28
+!i113 1
+R12

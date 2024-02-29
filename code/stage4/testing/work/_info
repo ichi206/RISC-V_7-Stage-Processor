@@ -1,0 +1,515 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/users/nick/documents/GitHub/RISC-V_7-Stage-Processor/memory/testing
+vdata_memory
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 19 data_memory_sv_unit 0 22 3X<m_2gF4FQ<Oi^NH:Az_2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2`UiWCUUGOY>RN6EYIbFj1
+I[]<CWR78b6aBG;_k5=:[[3
+!s105 data_memory_sv_unit
+S1
+Z3 dc:/users/nick/documents/ee469/lab1/code/stage4/testing
+w1709167140
+Z4 8../data_memory.sv
+Z5 F../data_memory.sv
+L0 4
+Z6 OV;L;10.5b;63
+Z7 !s108 1709177590.000000
+Z8 !s107 ..\..\common\definitions.vh|../data_memory.sv|
+Z9 !s90 -reportprogress|300|../data_memory.sv|
+!i113 1
+Z10 tCvgOpt 0
+vdata_memory_interface
+R1
+DXx4 work 29 data_memory_interface_sv_unit 0 22 J]iELe`Ba2j9ljSjf:CCn2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Y0lj4cQzg[Reo`]8>ODWa1
+I7RkiNb6_nV?9zmYjF9CEG2
+!s105 data_memory_interface_sv_unit
+S1
+Z11 dc:/users/nick/documents/github/RISC-V_7-Stage-Processor/memory/testing
+w1708208024
+Z12 8../data_memory_interface.sv
+Z13 F../data_memory_interface.sv
+L0 48
+R6
+!s108 1708208026.000000
+Z14 !s107 ..\..\common\definitions.vh|../data_memory_interface.sv|
+Z15 !s90 -reportprogress|300|../data_memory_interface.sv|
+!i113 1
+R10
+Xdata_memory_interface_sv_unit
+R1
+VJ]iELe`Ba2j9ljSjf:CCn2
+r1
+!s85 0
+31
+!i10b 1
+!s100 A>OEAN61XDzc7YfT5NDAF0
+IJ]iELe`Ba2j9ljSjf:CCn2
+!i103 1
+S1
+R11
+w1708208624
+R12
+R13
+Z16 F..\..\common\definitions.vh
+L0 23
+R6
+!s108 1708209071.000000
+R14
+R15
+!i113 1
+R10
+Xdata_memory_sv_unit
+R1
+V3X<m_2gF4FQ<Oi^NH:Az_2
+r1
+!s85 0
+31
+!i10b 1
+!s100 K@oYK0kBdNL5F2N>eChj]1
+I3X<m_2gF4FQ<Oi^NH:Az_2
+!i103 1
+S1
+R3
+w1709175403
+R4
+R5
+R16
+Z17 L0 22
+R6
+R7
+R8
+R9
+!i113 1
+R10
+vdata_memory_test
+R1
+DXx4 work 24 data_memory_test_sv_unit 0 22 DLCS_;Bz^K?G@nZkh]CFO2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 9iaVMS3JY>emGEhJaHi561
+IjNQ]l?Zg`QDD@WkW4;2bP3
+!s105 data_memory_test_sv_unit
+S1
+R3
+Z18 w1709176566
+Z19 8data_memory_test.sv
+Z20 Fdata_memory_test.sv
+L0 4
+R6
+R7
+Z21 !s107 ../../common/definitions.vh|data_memory_test.sv|
+Z22 !s90 -reportprogress|300|data_memory_test.sv|
+!i113 1
+R10
+Xdata_memory_test_sv_unit
+R1
+VDLCS_;Bz^K?G@nZkh]CFO2
+r1
+!s85 0
+31
+!i10b 1
+!s100 c1moQSllW1G;TjJGo_a:H2
+IDLCS_;Bz^K?G@nZkh]CFO2
+!i103 1
+S1
+R3
+R18
+R19
+R20
+Z23 F../../common/definitions.vh
+R17
+R6
+R7
+R21
+R22
+!i113 1
+R10
+vdata_memory_top
+R1
+DXx4 work 23 data_memory_top_sv_unit 0 22 3@]gf1>o^6fX@;5]DGh>73
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 c[<WSB<jk<Hz9iiWGH=lK2
+I4oX`X8d7N_J:gT_jS1kZJ3
+!s105 data_memory_top_sv_unit
+S1
+R3
+Z24 w1709176593
+Z25 8../data_memory_top.sv
+Z26 F../data_memory_top.sv
+L0 4
+R6
+R7
+Z27 !s107 ..\..\common\definitions.vh|../data_memory_top.sv|
+Z28 !s90 -reportprogress|300|../data_memory_top.sv|
+!i113 1
+R10
+Xdata_memory_top_sv_unit
+R1
+V3@]gf1>o^6fX@;5]DGh>73
+r1
+!s85 0
+31
+!i10b 1
+!s100 E7<a@AWbC1ERFb0@4T]zO0
+I3@]gf1>o^6fX@;5]DGh>73
+!i103 1
+S1
+R3
+R24
+R25
+R26
+R16
+R17
+R6
+R7
+R27
+R28
+!i113 1
+R10
+vdata_memory_write_interface
+R1
+DXx4 work 35 data_memory_write_interface_sv_unit 0 22 ?Gm:749?<4MH:fKPll68G3
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 jU2?ICl?6G9`[KYJ3UPiM1
+I]9@Zk2Z<637oTZziRZCiM1
+!s105 data_memory_write_interface_sv_unit
+S1
+R3
+Z29 w1709177585
+Z30 8../data_memory_write_interface.sv
+Z31 F../data_memory_write_interface.sv
+L0 40
+R6
+R7
+Z32 !s107 ..\..\common\definitions.vh|../data_memory_write_interface.sv|
+Z33 !s90 -reportprogress|300|../data_memory_write_interface.sv|
+!i113 1
+R10
+Xdata_memory_write_interface_sv_unit
+R1
+V?Gm:749?<4MH:fKPll68G3
+r1
+!s85 0
+31
+!i10b 1
+!s100 Vcib@o1Bh;KQf6mDjbaR=3
+I?Gm:749?<4MH:fKPll68G3
+!i103 1
+S1
+R3
+R29
+R30
+R31
+R16
+R17
+R6
+R7
+R32
+R33
+!i113 1
+R10
+Xdefinitions_sv_unit
+R1
+!s110 1707888125
+!i10b 1
+!s100 8gDoO^K4^h]nHJ<mFk1Y31
+I?<FmQ`XNLAYBjbbRGcO<]3
+V?<FmQ`XNLAYBjbbRGcO<]3
+!i103 1
+S1
+R0
+w1707887862
+8../../common/definitions.sv
+F../../common/definitions.sv
+Z34 L0 13
+R6
+r1
+!s85 0
+31
+!s108 1707888125.000000
+!s107 ../../common/definitions.sv|
+!s90 -reportprogress|300|../../common/definitions.sv|
+!i113 1
+R10
+Xenums
+R1
+!s110 1707890218
+!i10b 1
+!s100 Yf0Qn<Wh@60[?4YnnCG:l1
+In`KS8G55AEA<_DCCXd@zT2
+Vn`KS8G55AEA<_DCCXd@zT2
+S1
+R0
+w1707890215
+8..\..\common\definitions.vh
+R16
+L0 17
+R6
+r1
+!s85 0
+31
+!s108 1707890218.000000
+Z35 !s107 ..\..\common\definitions.vh|../memory.sv|
+Z36 !s90 -reportprogress|300|../memory.sv|
+!i113 1
+R10
+vinstruction_memory
+R1
+DXx4 work 26 instruction_memory_sv_unit 0 22 _7V?YdYnWcRXL1PbkU9_o1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 bc[j8PNJB91DB9J[he0;:1
+IS@fB>>S7j3KJb1gGbBOek3
+!s105 instruction_memory_sv_unit
+S1
+R11
+Z37 w1708060846
+Z38 8../instruction_memory.sv
+Z39 F../instruction_memory.sv
+L0 4
+R6
+Z40 !s108 1708060860.000000
+Z41 !s107 ..\..\common\definitions.vh|../instruction_memory.sv|
+Z42 !s90 -reportprogress|300|../instruction_memory.sv|
+!i113 1
+R10
+Xinstruction_memory_sv_unit
+R1
+V_7V?YdYnWcRXL1PbkU9_o1
+r1
+!s85 0
+31
+!i10b 1
+!s100 NHommU`^=WdOMQm`^7bHc1
+I_7V?YdYnWcRXL1PbkU9_o1
+!i103 1
+S1
+R11
+R37
+R38
+R39
+R16
+Z43 L0 16
+R6
+R40
+R41
+R42
+!i113 1
+R10
+vmemory
+R1
+DXx4 work 14 memory_sv_unit 0 22 V?Xe;P3=Da3[4OGOb[]D23
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 4EZ]Eb1SIn8lQ5R0j9=_63
+IJz0_kTOL:01^Tn=LI;Jh]2
+!s105 memory_sv_unit
+S1
+Z44 dC:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/memory/testing
+Z45 w1707956954
+Z46 8../memory.sv
+Z47 F../memory.sv
+L0 4
+R6
+Z48 !s108 1707956984.000000
+R35
+R36
+!i113 1
+R10
+Xmemory_sv_unit
+R1
+VV?Xe;P3=Da3[4OGOb[]D23
+r1
+!s85 0
+31
+!i10b 1
+!s100 J2Lb2kAB4`k8Gi=?jJb;a3
+IV?Xe;P3=Da3[4OGOb[]D23
+!i103 1
+S1
+R44
+R45
+R46
+R47
+R16
+R34
+R6
+R48
+R35
+R36
+!i113 1
+R10
+vprogram_counter
+R1
+DXx4 work 23 program_counter_sv_unit 0 22 kF4mE[l13eMcmMDokS_7>2
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 O3G@?83RFI`DQg=5lPQL;1
+Io:jXOQEoHZm82S^Y3?YKg0
+!s105 program_counter_sv_unit
+S1
+R44
+Z49 w1707961527
+Z50 8../../registers/program_counter.sv
+Z51 F../../registers/program_counter.sv
+L0 4
+R6
+Z52 !s108 1707966164.000000
+Z53 !s107 ..\..\registers\..\common\definitions.vh|../../registers/program_counter.sv|
+Z54 !s90 -reportprogress|300|../../registers/program_counter.sv|
+!i113 1
+R10
+Xprogram_counter_sv_unit
+R1
+VkF4mE[l13eMcmMDokS_7>2
+r1
+!s85 0
+31
+!i10b 1
+!s100 nTmf?F^LJ24h7bk8blGH^0
+IkF4mE[l13eMcmMDokS_7>2
+!i103 1
+S1
+R44
+R49
+R50
+R51
+Z55 F..\..\registers\..\common\definitions.vh
+R43
+R6
+R52
+R53
+R54
+!i113 1
+R10
+vregisters
+R1
+DXx4 work 17 registers_sv_unit 0 22 EB]iO`i0PD]RV5m9:Lkm[1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 6H2XU2H>efgRT?kGagf2O0
+I_PMEkKZgiJ_N??9PE5fR`2
+!s105 registers_sv_unit
+S1
+R44
+w1707888678
+Z56 8../../registers/registers.sv
+Z57 F../../registers/registers.sv
+L0 4
+R6
+R52
+Z58 !s107 ..\..\registers\..\common\definitions.vh|../../registers/registers.sv|
+Z59 !s90 -reportprogress|300|../../registers/registers.sv|
+!i113 1
+R10
+vregisters_only_test
+R1
+DXx4 work 27 registers_only_test_sv_unit 0 22 GYD6V127Ta2^:B[nMo5e[0
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 FnA>KioSjjSi<`HKC9d2W3
+INTUk0EoL:On;N?<F8N0o13
+!s105 registers_only_test_sv_unit
+S1
+R44
+Z60 w1707961906
+Z61 8registers_only_test.sv
+Z62 Fregisters_only_test.sv
+L0 4
+R6
+R52
+Z63 !s107 ../../common/definitions.vh|registers_only_test.sv|
+Z64 !s90 -reportprogress|300|registers_only_test.sv|
+!i113 1
+R10
+Xregisters_only_test_sv_unit
+R1
+VGYD6V127Ta2^:B[nMo5e[0
+r1
+!s85 0
+31
+!i10b 1
+!s100 JJ=e19?UzjoobSe@5Y[Q23
+IGYD6V127Ta2^:B[nMo5e[0
+!i103 1
+S1
+R44
+R60
+R61
+R62
+R23
+R43
+R6
+R52
+R63
+R64
+!i113 1
+R10
+Xregisters_sv_unit
+R1
+VEB]iO`i0PD]RV5m9:Lkm[1
+r1
+!s85 0
+31
+!i10b 1
+!s100 XaJK47BCBeo:CbCLoTjMP3
+IEB]iO`i0PD]RV5m9:Lkm[1
+!i103 1
+S1
+R44
+w1707959811
+R56
+R57
+R55
+R43
+R6
+R52
+R58
+R59
+!i113 1
+R10
