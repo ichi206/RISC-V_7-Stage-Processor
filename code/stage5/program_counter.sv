@@ -3,7 +3,7 @@
 
 module program_counter
 (
-	input logic clock, reset, register_writeback, jump,
+	input logic clock, reset, is_writeback_stage, jump,
 	input word jump_offset,
 	output word instruction_addr
 );
@@ -22,7 +22,7 @@ module program_counter
 	begin
 		if (reset)
 			instruction_addr = `BOOT_ADDRESS;
-		else if (register_writeback)
+		else if (is_writeback_stage)
 			instruction_addr = next_instruction_addr;
 	end
 

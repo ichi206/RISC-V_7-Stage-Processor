@@ -42,7 +42,7 @@ module decoder(
 	output logic [`range_instrs] instr_type,
 	output logic [3 : 0] branch_type,
 	output logic [2 : 0] load_type,
-	output tag rs1_async, rs2_async, rd_async,
+	output tag rs1_async, rs2_async, rd,
 	output word imm);
 
 	wire [6 : 0] op = line[6 : 0];
@@ -66,7 +66,7 @@ module decoder(
 	
 	assign rs1_async = line[19 : 15];
 	assign rs2_async = line[24 : 20];
-	assign rd_async = line[11 : 7];
+	wire rd_logic = line[11 : 7];
 	
 	word imm_logic;
 	assign imm_logic = GetImm(line, instr_type_logic);
@@ -75,6 +75,7 @@ module decoder(
 		instr_type = instr_type_logic;
 		branch_type = branch_type_logic;
 		load_type = load_type_logic;
+		rd = rd_logic;
 		imm = imm_logic;
 	end
 	

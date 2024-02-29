@@ -35,7 +35,7 @@ function word FormatHword(hword value, logic sign_extend);
 endfunction
 
 
-module data_read_interface
+module data_memory_read_interface
 (
 	input logic sign_extend,
 	input word long_addr,

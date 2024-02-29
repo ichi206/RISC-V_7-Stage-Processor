@@ -1,12 +1,11 @@
 `ifndef definitions_file
 `define definitions_file
 
-`define INSTRUCTION_FETCH 0
-`define INSTRUCTION_DECODE 1
-`define ARITHMETIC_LOGIC 2
-`define DATA_FETCH 3
-`define REGISTER_WRITEBACK 4
-`define HALT 5
+`define instr_stage 0
+`define decode_stage 1
+`define alu_stage 2
+`define data_stage 3
+`define reg_stage 4
 
 `define word_size 32
 `define tag_size 5 // number of bits to distinguish 32 registers
@@ -17,7 +16,7 @@
 `define instruction_memory_size 1024
 `define instruction_memory_bits $clog2(`instruction_memory_size)
 
-`define BOOT_ADDRESS 0 // address to boot to
+`define BOOT_ADDRESS 32'd4 // address to boot to
 
 typedef logic [`tag_size - 1 : 0] tag; // used to access registers
 typedef logic [`word_size / 2 - 1 : 0] hword;

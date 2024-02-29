@@ -3,16 +3,20 @@
 
 module data_memory_top
 (
-	input logic clock, write, read,
-	input word long_addr,
-	input word write_value,
+	input logic clock, is_data_stage,
+	input logic [`range_instrs] instr_type,
 	input logic [2 : 0] load_type,
+	input word long_addr, write_value,
 	
 	output word read_value
 );
 
 	logic [3 : 0] write_to;
 	word true_write_value;
+	
+	logic read, write;
+	assign read = is_data_stage & instr_type[`do_load];
+	assign write = is_data_stage & instr_type[`do_store];
 
 	data_memory dm
 	(
