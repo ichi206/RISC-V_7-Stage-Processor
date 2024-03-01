@@ -6,7 +6,7 @@ module test_top ();
 		forever #50 clock = ~clock;
 	end
 	
-	top cpu (.*);
+	top #("instructions.mif") cpu (.*);
 	
 	initial begin
 		reset = 1;

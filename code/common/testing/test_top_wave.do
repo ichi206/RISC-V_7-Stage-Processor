@@ -2,12 +2,17 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /test_top/clock
 add wave -noupdate /test_top/reset
-add wave -noupdate -radix unsigned /test_top/cpu/s5/regs/rs1_value
 add wave -noupdate -radix binary /test_top/cpu/c/stage
-add wave -noupdate /test_top/cpu/instrs/long_instruction_addr
-add wave -noupdate /test_top/cpu/instrs/instruction
+add wave -noupdate -radix hexadecimal /test_top/cpu/instrs/long_instruction_addr
+add wave -noupdate /test_top/cpu/instr_type
+add wave -noupdate -radix unsigned /test_top/cpu/rs1_async
+add wave -noupdate -radix unsigned /test_top/cpu/rs2_async
+add wave -noupdate -radix unsigned /test_top/cpu/rd
+add wave -noupdate -radix unsigned /test_top/cpu/rs1_read
+add wave -noupdate -radix unsigned /test_top/cpu/rs2_read
+add wave -noupdate -radix unsigned /test_top/cpu/eval
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {965 ps} 0}
+WaveRestoreCursors {{Cursor 1} {180 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -23,4 +28,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {4 ns}
+WaveRestoreZoom {0 ps} {3769 ps}

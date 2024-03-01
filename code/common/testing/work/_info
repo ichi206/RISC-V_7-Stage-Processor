@@ -26,7 +26,7 @@ Z3 8../../stage3/alu.sv
 Z4 F../../stage3/alu.sv
 L0 4
 Z5 OV;L;10.5b;63
-Z6 !s108 1709229683.000000
+Z6 !s108 1709250723.000000
 Z7 !s107 ..\..\stage3\..\common\definitions.vh|../../stage3/alu.sv|
 Z8 !s90 -reportprogress|300|../../stage3/alu.sv|
 !i113 1
@@ -56,7 +56,7 @@ R8
 R9
 vcontrol
 R1
-Z12 !s110 1709229683
+Z12 !s110 1709250723
 !i10b 1
 !s100 W;b;ZENId;7eRz];?<eQW3
 Ij62cXbI3AR>?7Hz3=2jM=1
@@ -348,9 +348,9 @@ Z40 8../../stage1/instruction_memory.sv
 Z41 F../../stage1/instruction_memory.sv
 L0 4
 R5
-Z42 !s108 1709229682.000000
-Z43 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
-Z44 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
+R6
+Z42 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
+Z43 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
 !i113 1
 R9
 Xinstruction_memory_sv_unit
@@ -371,9 +371,9 @@ R41
 F..\..\stage1\..\common\definitions.vh
 R11
 R5
+R6
 R42
 R43
-R44
 !i113 1
 R9
 vprogram_counter
@@ -389,14 +389,14 @@ I_zeaH8@nR8ezLhofMY7mE2
 !s105 program_counter_sv_unit
 S1
 R0
-Z45 w1709228780
-Z46 8../../stage5/program_counter.sv
-Z47 F../../stage5/program_counter.sv
+Z44 w1709228780
+Z45 8../../stage5/program_counter.sv
+Z46 F../../stage5/program_counter.sv
 L0 4
 R5
 R6
-Z48 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
-Z49 !s90 -reportprogress|300|../../stage5/program_counter.sv|
+Z47 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
+Z48 !s90 -reportprogress|300|../../stage5/program_counter.sv|
 !i113 1
 R9
 Xprogram_counter_sv_unit
@@ -411,15 +411,15 @@ I3zK1I7[HUd9`UAkfXGdLo3
 !i103 1
 S1
 R0
+R44
 R45
 R46
-R47
 R25
 R11
 R5
 R6
+R47
 R48
-R49
 !i113 1
 R9
 vregisters
@@ -430,19 +430,19 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 9d2O61dFPA]iC0m^i8Ubl1
-I8Y@kzD>00RVdee66l4:[?3
+!s100 SZi16XOH:c;B1n`Bej9]U3
+I9>]2LM[??;e=UTabJOS951
 !s105 registers_sv_unit
 S1
 R0
-Z50 w1709228318
-Z51 8../../stage5/registers.sv
-Z52 F../../stage5/registers.sv
+Z49 w1709241379
+Z50 8../../stage5/registers.sv
+Z51 F../../stage5/registers.sv
 L0 4
 R5
 R6
-Z53 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/registers.sv|
-Z54 !s90 -reportprogress|300|../../stage5/registers.sv|
+Z52 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/registers.sv|
+Z53 !s90 -reportprogress|300|../../stage5/registers.sv|
 !i113 1
 R9
 Xregisters_sv_unit
@@ -457,15 +457,15 @@ Ih9A0Ainl<6i1V;:]9`g=;0
 !i103 1
 S1
 R0
+R49
 R50
 R51
-R52
 R25
 R11
 R5
 R6
+R52
 R53
-R54
 !i113 1
 R9
 vstage5_top
@@ -481,14 +481,14 @@ I]Cc6bzTLWOe7k=l:E[4G<0
 !s105 stage5_top_sv_unit
 S1
 R0
-Z55 w1709228662
-Z56 8../../stage5/stage5_top.sv
-Z57 F../../stage5/stage5_top.sv
+Z54 w1709228662
+Z55 8../../stage5/stage5_top.sv
+Z56 F../../stage5/stage5_top.sv
 L0 4
 R5
 R6
-Z58 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/stage5_top.sv|
-Z59 !s90 -reportprogress|300|../../stage5/stage5_top.sv|
+Z57 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/stage5_top.sv|
+Z58 !s90 -reportprogress|300|../../stage5/stage5_top.sv|
 !i113 1
 R9
 Xstage5_top_sv_unit
@@ -503,28 +503,28 @@ I^@?@68Yao0UG?lRkzSPRQ1
 !i103 1
 S1
 R0
+R54
 R55
 R56
-R57
 R25
 R11
 R5
 R6
+R57
 R58
-R59
 !i113 1
 R9
 vtest_top
 R1
 R12
 !i10b 1
-!s100 @bk05O2<[AF[bhgBV7=g^0
-I5ia226jehWTzYE=4ZlKiL0
+!s100 :^V]Y9b4gMGLCZAR@fM3B2
+I1n:NhYVc>jQfcbPB?0A<i3
 R2
 !s105 test_top_sv_unit
 S1
 R0
-w1709226634
+w1709246126
 8test_top.sv
 Ftest_top.sv
 L0 1
@@ -545,19 +545,19 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 hDJ6`Pz4^T7jW9Hm3>kam0
-IQdLBm3nXXQhhT0F0lV0Y=3
+!s100 AD@<:AF^C=1S21Q]eXEa_1
+INA_d;H?SEL29Vz^Kc_4N?1
 !s105 top_sv_unit
 S1
 R0
-Z60 w1709229678
-Z61 8../top.sv
-Z62 F../top.sv
+Z59 w1709246674
+Z60 8../top.sv
+Z61 F../top.sv
 L0 4
 R5
 R6
-Z63 !s107 ..\definitions.vh|../top.sv|
-Z64 !s90 -reportprogress|300|../top.sv|
+Z62 !s107 ..\definitions.vh|../top.sv|
+Z63 !s90 -reportprogress|300|../top.sv|
 !i113 1
 R9
 Xtop_sv_unit
@@ -572,14 +572,14 @@ I:b7fAGG`_h1NV5K3C5`H]0
 !i103 1
 S1
 R0
+R59
 R60
 R61
-R62
 F..\definitions.vh
 R11
 R5
 R6
+R62
 R63
-R64
 !i113 1
 R9

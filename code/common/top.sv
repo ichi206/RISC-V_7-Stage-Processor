@@ -1,14 +1,14 @@
 `include "definitions.vh"
 
 
-module top (input logic clock, reset);
+module top #(parameter program_instructions) (input logic clock, reset);
 
 	logic [4 : 0] stage;
 	control c (.*);
 
 	word long_instruction_addr, instruction;
 	
-	instruction_memory #("../common/program.mif") instrs (.*);
+	instruction_memory #(program_instructions) instrs (.*);
 	
 	logic [`range_instrs] instr_type;
 	logic [3 : 0] branch_type;
