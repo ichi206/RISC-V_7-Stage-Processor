@@ -16,7 +16,7 @@
 `define instruction_memory_size 1024
 `define instruction_memory_bits $clog2(`instruction_memory_size)
 
-`define BOOT_ADDRESS 32'd4 // address to boot to
+`define BOOT_ADDRESS 32'd0 // address to boot to
 
 typedef logic [`tag_size - 1 : 0] tag; // used to access registers
 typedef logic [`word_size / 2 - 1 : 0] hword;
@@ -29,12 +29,13 @@ typedef logic [`word_size - 1 : 0] word;
 `define hword0 31 : 16
 `define hword1 15 : 0
 
-`define opcode_reg	 	7'b0110011
-`define opcode_imm		7'b0010011
-`define opcode_load		7'b0000011
-`define opcode_store	7'b0100011
-`define opcode_branch	7'b1100011
-`define opcode_jal		7'b1101111
+`define opcode_reg    7'b0110011
+`define opcode_imm    7'b0010011
+`define opcode_jal    7'b1101111
+`define opcode_jalr   7'b1100111
+`define opcode_branch 7'b1100011
+`define opcode_load   7'b0000011
+`define opcode_store  7'b0100011
 
 `define eq_mask 4'b0001
 `define ne_mask 4'b0010
@@ -56,9 +57,10 @@ typedef logic [`word_size - 1 : 0] word;
 `define do_imm 1
 `define add_or_sub 2
 `define do_jal 3
-`define do_branch 4
-`define do_load 5
-`define do_store 6
-`define range_instrs 6 : 0
+`define do_jalr 4
+`define do_branch 5
+`define do_load 6
+`define do_store 7
+`define range_instrs 7 : 0
 
 `endif

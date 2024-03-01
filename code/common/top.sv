@@ -29,8 +29,7 @@ module top #(parameter program_instructions) (input logic clock, reset);
 	
 	alu arith (
 		.clock,
-		.use_rs2(instr_type[`do_reg]),
-		.add_or_sub(instr_type[`add_or_sub]),
+		.instr_type,
 		.rs1(rs1_read), .rs2(rs2_read), .imm,
 		.compare, .eval);
 	
@@ -40,7 +39,7 @@ module top #(parameter program_instructions) (input logic clock, reset);
 	data_memory_top mem (
 		.clock, .is_data_stage(stage[`data_stage]),
 		.instr_type, .load_type,
-		.long_addr(eval), .write_value(rs1_read),
+		.long_addr(eval), .write_value(rs2_read),
 		.read_value(memory_read_value));
 	
 	stage5_top s5 (
@@ -48,7 +47,7 @@ module top #(parameter program_instructions) (input logic clock, reset);
 		.instr_type,
 		.rs1(rs1_async), .rs2(rs2_async), .rd,
 		.branch_type, .compare,
-		.alu_output(eval), .memory_read_value, .jump_offset(imm),
+		.alu_output(eval), .memory_read_value, .imm,
 		.load_type,
 		.instruction_addr(long_instruction_addr), .rs1_read, .rs2_read);
 	

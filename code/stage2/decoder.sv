@@ -4,13 +4,15 @@
 function word GetImm(word line, logic [`range_instrs] instr_type_logic);
 	if (instr_type_logic[`do_imm])
 		return {{20{line[31]}}, line[31 : 20]};
-	if (instr_type_logic[`do_load])
-		return {{20{line[31]}}, line[31 : 20]};
-	if (instr_type_logic[`do_store])
-		return {{20{line[31]}}, line[31 : 25], line[11 : 7]};
 	if (instr_type_logic[`do_jal])
 		return {{12{line[31]}}, line[19 : 12], line[20], line[30 : 21], 1'b0};
-	return {{20{line[31]}}, line[7], line[30 : 25], line[11 : 8], 1'b0};
+	if (instr_type_logic[`do_jalr])
+		return {{20{line[31]}}, line[31 : 20]};
+	if (instr_type_logic[`do_branch])
+		return {{20{line[31]}}, line[7], line[30 : 25], line[11 : 8], 1'b0};
+	if (instr_type_logic[`do_load])
+		return {{20{line[31]}}, line[31 : 20]};
+	return {{20{line[31]}}, line[31 : 25], line[11 : 7]};
 endfunction
 
 
@@ -54,6 +56,7 @@ module decoder(
 	assign instr_type_logic[`do_imm]     = op == `opcode_imm;
 	assign instr_type_logic[`add_or_sub] = op == `opcode_reg && funct7 == 7'h20;
 	assign instr_type_logic[`do_jal]     = op == `opcode_jal;
+	assign instr_type_logic[`do_jalr]    = op == `opcode_jalr;
 	assign instr_type_logic[`do_branch]  = op == `opcode_branch;
 	assign instr_type_logic[`do_load]    = op == `opcode_load;
 	assign instr_type_logic[`do_store]   = op == `opcode_store;

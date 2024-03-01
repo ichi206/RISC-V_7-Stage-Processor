@@ -23,13 +23,13 @@ module data_memory
 		if (write)
 		begin
 			if (write_to[3])
-				memb0[which_word] = write_value[`byte3];
+				memb3[which_word] = write_value[`byte3];
 			if (write_to[2])
-				memb1[which_word] = write_value[`byte2];
+				memb2[which_word] = write_value[`byte2];
 			if (write_to[1])
-				memb2[which_word] = write_value[`byte1];
+				memb1[which_word] = write_value[`byte1];
 			if (write_to[0])
-				memb3[which_word] = write_value[`byte0];
+				memb0[which_word] = write_value[`byte0];
 		end
 		else if (read)
 			read_value = {memb3[which_word], memb2[which_word], memb1[which_word], memb0[which_word]};

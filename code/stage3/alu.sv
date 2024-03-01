@@ -2,13 +2,16 @@
 
 
 module alu(
-	input logic clock, use_rs2, add_or_sub,
+	input logic clock,
+	input logic [`range_instrs] instr_type,
 	input word rs1, rs2, imm,
 	
 	output logic [3 : 0] compare,
 	output word eval);
 	
 	word arg2;
+	logic use_rs2;
+	assign use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
 	assign arg2 = use_rs2 ? rs2 : imm;
 	
 	word add_output, sub_output;
@@ -22,7 +25,7 @@ module alu(
 	assign compare_logic[`ge] = ~compare_logic[`lt];
 	
 	word eval_logic;
-	assign eval_logic = add_or_sub ? sub_output : add_output;
+	assign eval_logic = instr_type[`add_or_sub] ? sub_output : add_output;
 	
 	always_ff @(posedge clock) begin
 		compare = compare_logic;
