@@ -9,7 +9,7 @@ function word GetImm(word line, logic [`range_instrs] instr_type_logic);
 	if (instr_type_logic[`do_store])
 		return {{20{line[31]}}, line[31 : 25], line[11 : 7]};
 	if (instr_type_logic[`do_jal])
-		return {{11{line[31]}}, line[19 : 12], line[20], line[30 : 21], 1'b0};
+		return {{12{line[31]}}, line[19 : 12], line[20], line[30 : 21], 1'b0};
 	return {{20{line[31]}}, line[7], line[30 : 25], line[11 : 8], 1'b0};
 endfunction
 
@@ -66,7 +66,8 @@ module decoder(
 	
 	assign rs1_async = line[19 : 15];
 	assign rs2_async = line[24 : 20];
-	wire rd_logic = line[11 : 7];
+	tag rd_logic;
+	assign rd_logic = line[11 : 7];
 	
 	word imm_logic;
 	assign imm_logic = GetImm(line, instr_type_logic);
