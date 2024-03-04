@@ -20,17 +20,17 @@ r1
 IRbZBLj67RDTHaloZUFR1D2
 !s105 alu_sv_unit
 S1
-R0
-Z3 w1709272368
-Z4 8../../stage3/alu.sv
-Z5 F../../stage3/alu.sv
+Z3 dc:/users/nick/documents/github/RISC-V_7-Stage-Processor/code/common/testing
+Z4 w1709272368
+Z5 8../../stage3/alu.sv
+Z6 F../../stage3/alu.sv
 L0 4
-Z6 OV;L;10.5b;63
-Z7 !s108 1709276754.000000
-Z8 !s107 ..\..\stage3\..\common\definitions.vh|../../stage3/alu.sv|
-Z9 !s90 -reportprogress|300|../../stage3/alu.sv|
+Z7 OV;L;10.5b;63
+Z8 !s108 1709353956.000000
+Z9 !s107 ..\..\stage3\..\common\definitions.vh|../../stage3/alu.sv|
+Z10 !s90 -reportprogress|300|../../stage3/alu.sv|
 !i113 1
-Z10 tCvgOpt 0
+Z11 tCvgOpt 0
 Xalu_sv_unit
 R1
 VU?bgZWhAl]4i9jRkj20nI3
@@ -42,41 +42,41 @@ r1
 IU?bgZWhAl]4i9jRkj20nI3
 !i103 1
 S1
-R0
 R3
 R4
 R5
-F..\..\stage3\..\common\definitions.vh
-Z11 L0 21
 R6
+F..\..\stage3\..\common\definitions.vh
+Z12 L0 21
 R7
 R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 vcontrol
 R1
-Z12 !s110 1709276754
+Z13 !s110 1709353956
 !i10b 1
 !s100 W;b;ZENId;7eRz];?<eQW3
 Ij62cXbI3AR>?7Hz3=2jM=1
 R2
 !s105 control_sv_unit
 S1
-R0
+R3
 w1709194238
 8../control.sv
 F../control.sv
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-R7
+R8
 !s107 ../control.sv|
 !s90 -reportprogress|300|../control.sv|
 !i113 1
-R10
+R11
 vdata_memory
 R1
 DXx4 work 19 data_memory_sv_unit 0 22 1FCa>0O^l[91JLoX1PVTS1
@@ -89,17 +89,17 @@ r1
 IV?Zn9ZB4]maGYaPYHSLNk2
 !s105 data_memory_sv_unit
 S1
-R0
-Z13 w1709273350
-Z14 8../../stage4/data_memory.sv
-Z15 F../../stage4/data_memory.sv
+R3
+Z14 w1709273350
+Z15 8../../stage4/data_memory.sv
+Z16 F../../stage4/data_memory.sv
 L0 4
-R6
 R7
-Z16 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory.sv|
-Z17 !s90 -reportprogress|300|../../stage4/data_memory.sv|
+R8
+Z17 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory.sv|
+Z18 !s90 -reportprogress|300|../../stage4/data_memory.sv|
 !i113 1
-R10
+R11
 vdata_memory_read_interface
 R1
 DXx4 work 34 data_memory_read_interface_sv_unit 0 22 2KlZ:7583n5[Sg<Q3dGC71
@@ -110,19 +110,19 @@ r1
 !i10b 1
 !s100 iK7bPbNRfUINY`Z^7>Szg2
 I91gLaQ3T28g=>Q:b6G[5:2
-Z18 !s105 data_memory_read_interface_sv_unit
+Z19 !s105 data_memory_read_interface_sv_unit
 S1
-R0
+R3
 w1709227276
-Z19 8../../stage5/data_memory_read_interface.sv
-Z20 F../../stage5/data_memory_read_interface.sv
-Z21 L0 38
-R6
+Z20 8../../stage5/data_memory_read_interface.sv
+Z21 F../../stage5/data_memory_read_interface.sv
+Z22 L0 38
 R7
-Z22 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/data_memory_read_interface.sv|
-Z23 !s90 -reportprogress|300|../../stage5/data_memory_read_interface.sv|
+R8
+Z23 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/data_memory_read_interface.sv|
+Z24 !s90 -reportprogress|300|../../stage5/data_memory_read_interface.sv|
 !i113 1
-R10
+R11
 Xdata_memory_read_interface_sv_unit
 R1
 V2KlZ:7583n5[Sg<Q3dGC71
@@ -134,18 +134,18 @@ r1
 I2KlZ:7583n5[Sg<Q3dGC71
 !i103 1
 S1
-R0
-Z24 w1709270637
-R19
+R3
+Z25 w1709270637
 R20
-Z25 F..\..\stage5\..\common\definitions.vh
-R11
-R6
+R21
+Z26 F..\..\stage5\..\common\definitions.vh
+R12
 R7
-R22
+R8
 R23
+R24
 !i113 1
-R10
+R11
 Xdata_memory_sv_unit
 R1
 V1FCa>0O^l[91JLoX1PVTS1
@@ -157,18 +157,18 @@ r1
 I1FCa>0O^l[91JLoX1PVTS1
 !i103 1
 S1
-R0
-R13
+R3
 R14
 R15
-Z26 F..\..\stage4\..\common\definitions.vh
-R11
-R6
-R7
 R16
+Z27 F..\..\stage4\..\common\definitions.vh
+R12
+R7
+R8
 R17
+R18
 !i113 1
-R10
+R11
 vdata_memory_top
 R1
 DXx4 work 23 data_memory_top_sv_unit 0 22 [ISendbQiT2;XY[EeIU[91
@@ -181,17 +181,17 @@ r1
 IYgONHKcTPD`lXYKHXjaQN0
 !s105 data_memory_top_sv_unit
 S1
-R0
+R3
 w1709194829
-Z27 8../../stage4/data_memory_top.sv
-Z28 F../../stage4/data_memory_top.sv
+Z28 8../../stage4/data_memory_top.sv
+Z29 F../../stage4/data_memory_top.sv
 L0 4
-R6
 R7
-Z29 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory_top.sv|
-Z30 !s90 -reportprogress|300|../../stage4/data_memory_top.sv|
+R8
+Z30 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory_top.sv|
+Z31 !s90 -reportprogress|300|../../stage4/data_memory_top.sv|
 !i113 1
-R10
+R11
 Xdata_memory_top_sv_unit
 R1
 V[ISendbQiT2;XY[EeIU[91
@@ -203,18 +203,18 @@ r1
 I[ISendbQiT2;XY[EeIU[91
 !i103 1
 S1
-R0
-R24
-R27
+R3
+R25
 R28
-R26
-R11
-R6
-R7
 R29
+R27
+R12
+R7
+R8
 R30
+R31
 !i113 1
-R10
+R11
 vdata_memory_write_interface
 R1
 DXx4 work 35 data_memory_write_interface_sv_unit 0 22 [njm8^dP4f?S>SJ`[clcL3
@@ -227,17 +227,17 @@ r1
 I9AR_zf7X?=RVUO52=PWfR0
 !s105 data_memory_write_interface_sv_unit
 S1
-R0
+R3
 w1709177585
-Z31 8../../stage4/data_memory_write_interface.sv
-Z32 F../../stage4/data_memory_write_interface.sv
-Z33 L0 40
-R6
+Z32 8../../stage4/data_memory_write_interface.sv
+Z33 F../../stage4/data_memory_write_interface.sv
+Z34 L0 40
 R7
-Z34 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory_write_interface.sv|
-Z35 !s90 -reportprogress|300|../../stage4/data_memory_write_interface.sv|
+R8
+Z35 !s107 ..\..\stage4\..\common\definitions.vh|../../stage4/data_memory_write_interface.sv|
+Z36 !s90 -reportprogress|300|../../stage4/data_memory_write_interface.sv|
 !i113 1
-R10
+R11
 Xdata_memory_write_interface_sv_unit
 R1
 V[njm8^dP4f?S>SJ`[clcL3
@@ -249,18 +249,18 @@ r1
 I[njm8^dP4f?S>SJ`[clcL3
 !i103 1
 S1
-R0
-R24
-R31
+R3
+R25
 R32
-R26
-R11
-R6
+R33
+R27
+R12
 R7
-R34
+R8
 R35
+R36
 !i113 1
-R10
+R11
 vdata_read_interface
 R1
 DXx4 work 34 data_memory_read_interface_sv_unit 0 22 jKJRkB24ihH5IaXVOnc8`1
@@ -271,19 +271,19 @@ r1
 !i10b 1
 !s100 i4aI=d]LO9Em2eXNHWz6L2
 I>T]T[8;oHBP7lP8VC8k?j3
-R18
+R19
 S1
 R0
 w1709177928
-R19
 R20
 R21
-R6
-!s108 1709227163.000000
 R22
+R7
+!s108 1709227163.000000
 R23
+R24
 !i113 1
-R10
+R11
 vdecoder
 R1
 DXx4 work 15 decoder_sv_unit 0 22 n8oUGA8c;gHI7O=;OXcN61
@@ -296,17 +296,17 @@ r1
 IKiQabBOGnB<7?XJ6;HZ<E2
 !s105 decoder_sv_unit
 S1
-R0
+R3
 w1709265133
-Z36 8../../stage2/decoder.sv
-Z37 F../../stage2/decoder.sv
-R33
-R6
+Z37 8../../stage2/decoder.sv
+Z38 F../../stage2/decoder.sv
+R34
 R7
-Z38 !s107 ..\..\stage2\..\common\definitions.vh|../../stage2/decoder.sv|
-Z39 !s90 -reportprogress|300|../../stage2/decoder.sv|
+R8
+Z39 !s107 ..\..\stage2\..\common\definitions.vh|../../stage2/decoder.sv|
+Z40 !s90 -reportprogress|300|../../stage2/decoder.sv|
 !i113 1
-R10
+R11
 Xdecoder_sv_unit
 R1
 Vn8oUGA8c;gHI7O=;OXcN61
@@ -318,18 +318,18 @@ r1
 In8oUGA8c;gHI7O=;OXcN61
 !i103 1
 S1
-R0
-R24
-R36
+R3
+R25
 R37
-F..\..\stage2\..\common\definitions.vh
-R11
-R6
-R7
 R38
+F..\..\stage2\..\common\definitions.vh
+R12
+R7
+R8
 R39
+R40
 !i113 1
-R10
+R11
 vinstruction_memory
 R1
 DXx4 work 26 instruction_memory_sv_unit 0 22 ^UD;24W6UhF4Hbl>S3=L30
@@ -342,17 +342,17 @@ r1
 IkTHl8XTdf?YoOd1[T8YO]3
 !s105 instruction_memory_sv_unit
 S1
-R0
+R3
 w1709253577
-Z40 8../../stage1/instruction_memory.sv
-Z41 F../../stage1/instruction_memory.sv
+Z41 8../../stage1/instruction_memory.sv
+Z42 F../../stage1/instruction_memory.sv
 L0 4
-R6
 R7
-Z42 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
-Z43 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
+R8
+Z43 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
+Z44 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
 !i113 1
-R10
+R11
 Xinstruction_memory_sv_unit
 R1
 V^UD;24W6UhF4Hbl>S3=L30
@@ -364,18 +364,18 @@ r1
 I^UD;24W6UhF4Hbl>S3=L30
 !i103 1
 S1
-R0
-R24
-R40
+R3
+R25
 R41
-F..\..\stage1\..\common\definitions.vh
-R11
-R6
-R7
 R42
+F..\..\stage1\..\common\definitions.vh
+R12
+R7
+R8
 R43
+R44
 !i113 1
-R10
+R11
 vprogram_counter
 R1
 DXx4 work 23 program_counter_sv_unit 0 22 nHe9V<IXAeEWRlQY:N[D_1
@@ -388,17 +388,17 @@ r1
 I:C^?OQ[;Fo5n1eh?U^;P02
 !s105 program_counter_sv_unit
 S1
-R0
-Z44 w1709275835
-Z45 8../../stage5/program_counter.sv
-Z46 F../../stage5/program_counter.sv
+R3
+Z45 w1709275835
+Z46 8../../stage5/program_counter.sv
+Z47 F../../stage5/program_counter.sv
 L0 4
-R6
 R7
-Z47 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
-Z48 !s90 -reportprogress|300|../../stage5/program_counter.sv|
+R8
+Z48 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
+Z49 !s90 -reportprogress|300|../../stage5/program_counter.sv|
 !i113 1
-R10
+R11
 Xprogram_counter_sv_unit
 R1
 VnHe9V<IXAeEWRlQY:N[D_1
@@ -410,18 +410,18 @@ r1
 InHe9V<IXAeEWRlQY:N[D_1
 !i103 1
 S1
-R0
-R44
+R3
 R45
 R46
-R25
-R11
-R6
-R7
 R47
+R26
+R12
+R7
+R8
 R48
+R49
 !i113 1
-R10
+R11
 vregisters
 R1
 DXx4 work 17 registers_sv_unit 0 22 F9G6^I]O5>iiQn@iJ@b>>2
@@ -434,17 +434,17 @@ r1
 I9>]2LM[??;e=UTabJOS951
 !s105 registers_sv_unit
 S1
-R0
+R3
 w1709241379
-Z49 8../../stage5/registers.sv
-Z50 F../../stage5/registers.sv
+Z50 8../../stage5/registers.sv
+Z51 F../../stage5/registers.sv
 L0 4
-R6
 R7
-Z51 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/registers.sv|
-Z52 !s90 -reportprogress|300|../../stage5/registers.sv|
+R8
+Z52 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/registers.sv|
+Z53 !s90 -reportprogress|300|../../stage5/registers.sv|
 !i113 1
-R10
+R11
 Xregisters_sv_unit
 R1
 VF9G6^I]O5>iiQn@iJ@b>>2
@@ -456,18 +456,18 @@ r1
 IF9G6^I]O5>iiQn@iJ@b>>2
 !i103 1
 S1
-R0
-R24
-R49
-R50
+R3
 R25
-R11
-R6
-R7
+R50
 R51
+R26
+R12
+R7
+R8
 R52
+R53
 !i113 1
-R10
+R11
 vstage5_top
 R1
 DXx4 work 18 stage5_top_sv_unit 0 22 kk8TC7Cd5`l`1]L@73cPH3
@@ -480,17 +480,17 @@ r1
 IcbnGb]kiX<S9Eaa@7V@[X3
 !s105 stage5_top_sv_unit
 S1
-R0
-Z53 w1709276320
-Z54 8../../stage5/stage5_top.sv
-Z55 F../../stage5/stage5_top.sv
+R3
+Z54 w1709276320
+Z55 8../../stage5/stage5_top.sv
+Z56 F../../stage5/stage5_top.sv
 L0 4
-R6
 R7
-Z56 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/stage5_top.sv|
-Z57 !s90 -reportprogress|300|../../stage5/stage5_top.sv|
+R8
+Z57 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/stage5_top.sv|
+Z58 !s90 -reportprogress|300|../../stage5/stage5_top.sv|
 !i113 1
-R10
+R11
 Xstage5_top_sv_unit
 R1
 Vkk8TC7Cd5`l`1]L@73cPH3
@@ -502,41 +502,41 @@ r1
 Ikk8TC7Cd5`l`1]L@73cPH3
 !i103 1
 S1
-R0
-R53
+R3
 R54
 R55
-R25
-R11
-R6
-R7
 R56
+R26
+R12
+R7
+R8
 R57
+R58
 !i113 1
-R10
+R11
 vtest_top
 R1
-R12
+R13
 !i10b 1
 !s100 J?=giHZbBY1fBVoGLgHmi2
 IKKkj=97IHbZzWQ]S3MoRd0
 R2
 !s105 test_top_sv_unit
 S1
-R0
+R3
 w1709276750
 8test_top.sv
 Ftest_top.sv
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-R7
+R8
 !s107 test_top.sv|
 !s90 -reportprogress|300|test_top.sv|
 !i113 1
-R10
+R11
 vtop
 R1
 DXx4 work 11 top_sv_unit 0 22 ji4@]Qe=3WFd8SLoXgemU1
@@ -549,17 +549,17 @@ r1
 IXHJQKCZT`emW:j9B4YPII0
 !s105 top_sv_unit
 S1
-R0
-Z58 w1709272323
-Z59 8../top.sv
-Z60 F../top.sv
+R3
+Z59 w1709272323
+Z60 8../top.sv
+Z61 F../top.sv
 L0 4
-R6
 R7
-Z61 !s107 ..\definitions.vh|../top.sv|
-Z62 !s90 -reportprogress|300|../top.sv|
+R8
+Z62 !s107 ..\definitions.vh|../top.sv|
+Z63 !s90 -reportprogress|300|../top.sv|
 !i113 1
-R10
+R11
 Xtop_sv_unit
 R1
 Vji4@]Qe=3WFd8SLoXgemU1
@@ -571,15 +571,15 @@ r1
 Iji4@]Qe=3WFd8SLoXgemU1
 !i103 1
 S1
-R0
-R58
+R3
 R59
 R60
-F..\definitions.vh
-R11
-R6
-R7
 R61
+F..\definitions.vh
+R12
+R7
+R8
 R62
+R63
 !i113 1
-R10
+R11
