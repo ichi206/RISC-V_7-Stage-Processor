@@ -6,11 +6,13 @@ module test_top ();
 		forever #50 clock = ~clock;
 	end
 	
-	top #("fib.mif") cpu (.*);
+	logic [7 : 0] display;
+	
+	top cpu (.*);
 	
 	initial begin
 		reset = 1;
-		@(posedge clock);
+		@(posedge clock)
 		reset = 0;
 		repeat(1500) @(posedge clock);
 		$stop;

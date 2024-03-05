@@ -3,7 +3,7 @@
 
 module instruction_memory #(parameter program_instructions)
 (
-	input logic clock, reset,
+	input logic clock, reset, is_instr_stage,
 	input word long_instruction_addr,
 	
 	output word instruction
@@ -19,7 +19,7 @@ module instruction_memory #(parameter program_instructions)
 	
 	always_ff @(posedge clock)
 	begin
-		if (!reset)
+		if (!reset && is_instr_stage)
 			instruction = mem[instruction_word_addr];
 	end
 
