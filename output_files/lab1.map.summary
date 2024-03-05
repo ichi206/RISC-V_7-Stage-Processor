@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Mar  5 00:11:01 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : lab1
+Top-level Entity Name : DE10_Nano_golden_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 294
+Total pins : 145
+Total virtual pins : 0
+Total block memory bits : 10,240
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
