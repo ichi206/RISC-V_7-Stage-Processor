@@ -13,12 +13,10 @@ module registers
 	
 	always_ff @(posedge clock)
 	begin
+		rs1_read = rs1 != 0 ? register_values[rs1] : 0;
+		rs2_read = rs2 != 0 ? register_values[rs2] : 0;
 		if (write_rd && rd != 0)
 			register_values[rd] = rd_value;
-		else begin
-			rs1_read = rs1 != 0 ? register_values[rs1] : 0;
-			rs2_read = rs2 != 0 ? register_values[rs2] : 0;
-		end
 	end
 
 endmodule

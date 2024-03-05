@@ -5,10 +5,11 @@ vlib work
 vlog ../../stage1/instruction_memory.sv
 vlog ../../stage2/decoder.sv
 vlog ../../stage3/alu.sv
+vlog ../../stage3/program_counter.sv
+vlog ../../stage3/stage3_top.sv
 vlog ../../stage4/data_memory.sv
 vlog ../../stage4/data_memory_write_interface.sv
 vlog ../../stage4/data_memory_top.sv
-vlog ../../stage5/program_counter.sv
 vlog ../../stage5/registers.sv
 vlog ../../stage5/data_memory_read_interface.sv
 vlog ../../stage5/stage5_top.sv

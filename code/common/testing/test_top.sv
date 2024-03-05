@@ -6,7 +6,9 @@ module test_top ();
 		forever #50 clock = ~clock;
 	end
 	
-	top #("fib.mif") cpu (.*);
+	logic [7 : 0] display;
+	
+	top cpu (.*);
 	
 	initial begin
 		reset = 1;

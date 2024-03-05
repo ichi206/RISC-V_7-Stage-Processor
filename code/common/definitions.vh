@@ -3,7 +3,7 @@
 
 `define instr_stage 0
 `define decode_stage 1
-`define alu_stage 2
+`define exe_stage 2
 `define data_stage 3
 `define reg_stage 4
 

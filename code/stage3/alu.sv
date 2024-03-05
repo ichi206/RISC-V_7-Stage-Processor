@@ -4,32 +4,24 @@
 module alu(
 	input logic clock,
 	input logic [`range_instrs] instr_type,
-	input word rs1, rs2, imm,
+	input word rs1_val, rs2_val, imm,
 	
-	output logic [3 : 0] compare,
-	output word eval);
+	output logic [3 : 0] compare_async,
+	output word eval_async);
 	
+	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
 	word arg2;
-	logic use_rs2;
-	assign use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
-	assign arg2 = use_rs2 ? rs2 : imm;
+	assign arg2 = use_rs2 ? rs2_val : imm;
 	
 	word add_output, sub_output;
-	assign add_output = rs1 + arg2;
-	assign sub_output = rs1 - arg2;
+	assign add_output = rs1_val + arg2;
+	assign sub_output = rs1_val - arg2;
 	
-	logic [3 : 0] compare_logic;
-	assign compare_logic[`eq] = rs1 == arg2;
-	assign compare_logic[`ne] = ~compare_logic[`eq];
-	assign compare_logic[`lt] = sub_output[31];
-	assign compare_logic[`ge] = ~compare_logic[`lt];
+	assign compare_async[`eq] = rs1_val == arg2;
+	assign compare_async[`ne] = ~compare_async[`eq];
+	assign compare_async[`lt] = sub_output[31];
+	assign compare_async[`ge] = ~compare_async[`lt];
 	
-	word eval_logic;
-	assign eval_logic = instr_type[`add_or_sub] ? sub_output : add_output;
-	
-	always_ff @(posedge clock) begin
-		compare = compare_logic;
-		eval = eval_logic;
-	end
+	assign eval_async = instr_type[`add_or_sub] ? sub_output : add_output;
 	
 endmodule

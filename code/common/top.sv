@@ -1,14 +1,19 @@
 `include "definitions.vh"
 
 
-module top #(parameter program_instructions) (input logic clock, reset);
+module top (
+	input logic clock, reset,
+	output logic [7 : 0] display);
 
 	logic [4 : 0] stage;
 	control c (.*);
 
 	word long_instruction_addr, instruction;
 	
-	instruction_memory #(program_instructions) instrs (.*);
+	instruction_memory #("fib.mif") instrs (
+		.clock, .reset, .is_instr_stage(stage[`instr_stage]),
+		.long_instruction_addr,
+		.instruction);
 	
 	logic [`range_instrs] instr_type;
 	logic [3 : 0] branch_type;
@@ -25,13 +30,13 @@ module top #(parameter program_instructions) (input logic clock, reset);
 	
 	word rs1_read, rs2_read;
 	logic [3 : 0] compare;
-	word eval;
+	word ia_plus4, eval;
 	
-	alu arith (
-		.clock,
-		.instr_type,
-		.rs1(rs1_read), .rs2(rs2_read), .imm,
-		.compare, .eval);
+	stage3_top s3 (
+		.clock, .reset, .is_exe_stage(stage[`exe_stage]),
+		.instr_type, .branch_type,
+		.rs1_val(rs1_read), .rs2_val(rs2_read), .imm,
+		.instruction_addr(long_instruction_addr), .ia_plus4, .eval);
 	
 	logic mem_write, mem_read;
 	word memory_read_value;
@@ -44,11 +49,11 @@ module top #(parameter program_instructions) (input logic clock, reset);
 	
 	stage5_top s5 (
 		.clock, .reset, .sign_extend(1'b0), .is_writeback_stage(stage[`reg_stage]),
-		.instr_type,
+		.instr_type, .load_type,
 		.rs1(rs1_async), .rs2(rs2_async), .rd,
-		.branch_type, .compare,
-		.alu_output(eval), .memory_read_value, .imm,
-		.load_type,
-		.instruction_addr(long_instruction_addr), .rs1_read, .rs2_read);
+		.ia_plus4, .alu_output(eval), .memory_read_value,
+		.rs1_read, .rs2_read);
+	
+	assign display = long_instruction_addr[7 : 0];
 	
 endmodule

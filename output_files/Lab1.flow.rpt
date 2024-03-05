@@ -1,5 +1,5 @@
-Flow report for Lab1
-Sat Feb 17 13:11:55 2024
+Flow report for lab1
+Tue Mar  5 11:11:35 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sat Feb 17 13:11:54 2024          ;
+; Flow Status                     ; Successful - Tue Mar  5 11:11:35 2024          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; Lab1                                           ;
-; Top-level Entity Name           ; data_memory_top                                ;
+; Revision Name                   ; lab1                                           ;
+; Top-level Entity Name           ; DE10_Nano_golden_top                           ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSEBA6U23I7                                   ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 8224                                           ;
-; Total pins                      ; 102                                            ;
+; Total registers                 ; 294                                            ;
+; Total pins                      ; 145                                            ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
+; Total block memory bits         ; 10,240                                         ;
 ; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
@@ -68,40 +68,28 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/17/2024 13:11:37 ;
+; Start date & time ; 03/05/2024 11:11:27 ;
 ; Main task         ; Compilation         ;
-; Revision Name     ; Lab1                ;
+; Revision Name     ; lab1                ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                   ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name     ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 273661947096034.170820429703656        ; --            ; --              ; --                                ;
-; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Precision Synthesis                    ; <None>        ; --              ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --              ; eda_board_design_symbol           ;
-; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --            ; --              ; eda_design_synthesis              ;
-; EDA_LMF_FILE                        ; mentor.lmf                             ; --            ; --              ; eda_design_synthesis              ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --              ; eda_simulation                    ;
-; EDA_RUN_TOOL_AUTOMATICALLY          ; On                                     ; --            ; --              ; eda_simulation                    ;
-; EDA_RUN_TOOL_AUTOMATICALLY          ; On                                     ; --            ; --              ; eda_design_synthesis              ;
-; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (Verilog)            ; <None>        ; --              ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --              ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 100                                    ; --            ; --              ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --              ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; data_memory_top ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; data_memory_top ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; data_memory_top ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --              ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --              ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --              ; --                                ;
-; TOP_LEVEL_ENTITY                    ; data_memory_top                        ; Lab1          ; --              ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name          ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 91765617412.170966588710752            ; --            ; --                   ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                   ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                   ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_Nano_golden_top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE10_Nano_golden_top ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE10_Nano_golden_top ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                   ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                   ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                   ; --         ;
+; TOP_LEVEL_ENTITY                    ; DE10_Nano_golden_top                   ; lab1          ; --                   ; --         ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -109,8 +97,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4920 MB             ; 00:00:23                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4865 MB             ; 00:00:19                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,7 +114,7 @@ https://fpgasoftware.intel.com/eula.
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
+quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
 
 
 
