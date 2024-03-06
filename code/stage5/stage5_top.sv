@@ -2,7 +2,7 @@
 
 
 module stage5_top (
-	input logic clock, reset, sign_extend, is_writeback_stage,
+	input logic clock, sign_extend, is_writeback_stage,
 	input logic [`range_instrs] instr_type,
 	input logic [2 : 0] load_type,
 	input tag rs1, rs2, rd,

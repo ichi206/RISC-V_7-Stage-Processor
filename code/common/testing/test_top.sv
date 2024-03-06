@@ -8,7 +8,7 @@ module test_top ();
 	
 	logic [7 : 0] display;
 	
-	top cpu (.*);
+	top #("../../../memfiles/fib.mif") cpu (.*);
 	
 	initial begin
 		reset = 1;

@@ -7,7 +7,7 @@ module alu(
 	input word rs1_val, rs2_val, imm,
 	
 	output logic [3 : 0] compare_async,
-	output word eval_async);
+	output word eval_async, eval);
 	
 	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
 	word arg2;
@@ -23,5 +23,8 @@ module alu(
 	assign compare_async[`ge] = ~compare_async[`lt];
 	
 	assign eval_async = instr_type[`add_or_sub] ? sub_output : add_output;
+	
+	always_ff @(posedge clock)
+		eval = eval_async;
 	
 endmodule

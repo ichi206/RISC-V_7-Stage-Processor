@@ -28,7 +28,4 @@ module stage3_top (
 	
 	program_counter pc (.*);
 	
-	always_ff @(posedge clock)
-		eval = eval_async;
-	
 endmodule
