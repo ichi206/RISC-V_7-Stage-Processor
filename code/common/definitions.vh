@@ -1,11 +1,11 @@
 `ifndef definitions_file
 `define definitions_file
 
-`define instr_stage 0
-`define decode_stage 1
-`define exe_stage 2
-`define data_stage 3
-`define reg_stage 4
+`define instr_stage 1
+`define decode_stage 2
+`define exe_stage 3
+`define data_stage 5
+`define reg_stage 6
 
 `define word_size 32
 `define tag_size 5 // number of bits to distinguish 32 registers
@@ -55,12 +55,12 @@ typedef logic [`word_size - 1 : 0] word;
 
 `define do_reg 0
 `define do_imm 1
-`define add_or_sub 2
-`define do_jal 3
-`define do_jalr 4
-`define do_branch 5
-`define do_load 6
-`define do_store 7
+`define do_jal 2
+`define do_jalr 3
+`define do_branch 4
+`define do_load 5
+`define do_store 6
+`define do_sub 7
 `define range_instrs 7 : 0
 
 `endif

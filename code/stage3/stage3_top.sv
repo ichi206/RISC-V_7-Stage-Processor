@@ -2,17 +2,24 @@
 
 
 module stage3_top (
-	input logic clock, reset, is_exe_stage,
+	input logic clock, reset, stall,
 	input logic [`range_instrs] instr_type,
 	input logic [3 : 0] branch_type,
 	input word rs1_val, rs2_val, imm,
 	
-	output word instruction_addr, ia_plus4, eval);
+	output word instruction_addr, jal_addr, eval);
 	
+	wire add_or_sub = instr_type[`do_reg] & instr_type[`do_sub] | instr_type[`do_branch];
+	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
+	word arg2;
+	assign arg2 = use_rs2 ? rs2_val : imm;
 	logic [3 : 0] compare_async;
 	word eval_async;
 	
-	alu arith (.*);
+	alu arith (.clock, .stall, .add_or_sub,
+		.arg1(rs1_val), .arg2,
+		.compare_async,
+		.eval_async, .eval);
 	
 	wire take_branch =
 		branch_type[`eq] & compare_async[`eq] |
@@ -26,6 +33,9 @@ module stage3_top (
 	word jump_offset;
 	assign jump_offset = instr_type[`do_jalr] ? eval_async : imm;
 	
-	program_counter pc (.*);
+	program_counter pc (
+		.clock, .reset, .stall, .jump, .jalr,
+		.jump_offset,
+		.instruction_addr, .ia_plus4(jal_addr));
 	
 endmodule

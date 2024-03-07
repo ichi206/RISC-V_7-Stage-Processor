@@ -3,7 +3,7 @@
 
 module program_counter
 (
-	input logic clock, reset, is_exe_stage, jump, jalr,
+	input logic clock, reset, stall, jump, jalr,
 	input word jump_offset,
 	output word instruction_addr, ia_plus4
 );
@@ -23,7 +23,7 @@ module program_counter
 	always_ff @(posedge clock) begin
 		if (reset)
 			instruction_addr = `BOOT_ADDRESS;
-		else if (is_exe_stage) begin
+		else if (!stall) begin
 			ia_plus4 = ia_plus4_logic;
 			instruction_addr = instruction_addr_logic;
 		end

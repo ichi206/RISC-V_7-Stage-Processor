@@ -38,7 +38,7 @@ endfunction
 
 
 module decoder(
-	input logic clock,
+	input logic clock, stall,
 	input word line,
 	
 	output logic [`range_instrs] instr_type,
@@ -54,12 +54,12 @@ module decoder(
 	logic [`range_instrs] instr_type_logic;
 	assign instr_type_logic[`do_reg]     = op == `opcode_reg;
 	assign instr_type_logic[`do_imm]     = op == `opcode_imm;
-	assign instr_type_logic[`add_or_sub] = op == `opcode_reg && funct7 == 7'h20;
 	assign instr_type_logic[`do_jal]     = op == `opcode_jal;
 	assign instr_type_logic[`do_jalr]    = op == `opcode_jalr;
 	assign instr_type_logic[`do_branch]  = op == `opcode_branch;
 	assign instr_type_logic[`do_load]    = op == `opcode_load;
 	assign instr_type_logic[`do_store]   = op == `opcode_store;
+	assign instr_type_logic[`do_sub]     = funct7 == 7'h20;
 	
 	logic [3 : 0] branch_type_logic;
 	assign branch_type_logic = GetBranchType(funct3);
@@ -76,11 +76,13 @@ module decoder(
 	assign imm_logic = GetImm(line, instr_type_logic);
 	
 	always_ff @(posedge clock) begin
-		instr_type = instr_type_logic;
-		branch_type = branch_type_logic;
-		load_type = load_type_logic;
-		rd = rd_logic;
-		imm = imm_logic;
+		if (!stall) begin
+			instr_type = instr_type_logic;
+			branch_type = branch_type_logic;
+			load_type = load_type_logic;
+			rd = rd_logic;
+			imm = imm_logic;
+		end
 	end
 	
 endmodule

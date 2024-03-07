@@ -14,7 +14,7 @@ module test_top ();
 		reset = 1;
 		@(posedge clock)
 		reset = 0;
-		repeat(1500) @(posedge clock);
+		repeat(2100) @(posedge clock);
 		$stop;
 	end
 	
