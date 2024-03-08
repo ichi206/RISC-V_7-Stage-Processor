@@ -13,7 +13,8 @@ vlog ../../stage4/data_memory_top.sv
 vlog ../../stage5/registers.sv
 vlog ../../stage5/data_memory_read_interface.sv
 vlog ../../stage5/stage5_top.sv
-vlog ../control.sv
+vlog ../bypass.sv
+vlog ../flush.sv
 vlog ../top.sv
 vlog test_top.sv
 

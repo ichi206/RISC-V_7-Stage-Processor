@@ -44,7 +44,7 @@ module decoder(
 	output logic [`range_instrs] instr_type,
 	output logic [3 : 0] branch_type,
 	output logic [2 : 0] load_type,
-	output tag rs1_async, rs2_async, rd,
+	output tag rs1_async, rs2_async, rs1, rs2, rd,
 	output word imm);
 
 	wire [6 : 0] op = line[6 : 0];
@@ -60,6 +60,10 @@ module decoder(
 	assign instr_type_logic[`do_load]    = op == `opcode_load;
 	assign instr_type_logic[`do_store]   = op == `opcode_store;
 	assign instr_type_logic[`do_sub]     = funct7 == 7'h20;
+	assign instr_type_logic[`write_rd] =
+		~(instr_type_logic[`do_store] | instr_type_logic[`do_branch]);
+	assign instr_type_logic[`use_rs2] =
+		instr_type_logic[`do_reg] | instr_type_logic[`do_branch];
 	
 	logic [3 : 0] branch_type_logic;
 	assign branch_type_logic = GetBranchType(funct3);
@@ -77,11 +81,13 @@ module decoder(
 	
 	always_ff @(posedge clock) begin
 		if (!stall) begin
-			instr_type = instr_type_logic;
-			branch_type = branch_type_logic;
-			load_type = load_type_logic;
-			rd = rd_logic;
-			imm = imm_logic;
+			instr_type <= instr_type_logic;
+			branch_type <= branch_type_logic;
+			load_type <= load_type_logic;
+			rs1 <= rs1_async;
+			rs2 <= rs2_async;
+			rd <= rd_logic;
+			imm <= imm_logic;
 		end
 	end
 	

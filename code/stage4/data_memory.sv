@@ -21,10 +21,10 @@ module data_memory
 	word long_addr_delay, write_value_delay;
 	
 	always_ff @(posedge clock) begin
-		write_delay = write;
-		write_to_delay = write_to;
-		long_addr_delay = long_addr;
-		write_value_delay = write_value;
+		write_delay <= write;
+		write_to_delay <= write_to;
+		long_addr_delay <= long_addr;
+		write_value_delay <= write_value;
 	end
 	
 	wire [`data_memory_bits - 3 : 0] which_word = long_addr_delay[`data_memory_bits - 1 : 2];
@@ -34,16 +34,16 @@ module data_memory
 		if (write_delay)
 		begin
 			if (write_to_delay[3])
-				memb3[which_word] = write_value_delay[`byte3];
+				memb3[which_word] <= write_value_delay[`byte3];
 			if (write_to_delay[2])
-				memb2[which_word] = write_value_delay[`byte2];
+				memb2[which_word] <= write_value_delay[`byte2];
 			if (write_to_delay[1])
-				memb1[which_word] = write_value_delay[`byte1];
+				memb1[which_word] <= write_value_delay[`byte1];
 			if (write_to_delay[0])
-				memb0[which_word] = write_value_delay[`byte0];
+				memb0[which_word] <= write_value_delay[`byte0];
 		end
 		else
-			read_value = {memb3[which_word], memb2[which_word], memb1[which_word], memb0[which_word]};
+			read_value <= {memb3[which_word], memb2[which_word], memb1[which_word], memb0[which_word]};
 	end
 
 endmodule

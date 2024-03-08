@@ -61,6 +61,11 @@ typedef logic [`word_size - 1 : 0] word;
 `define do_load 5
 `define do_store 6
 `define do_sub 7
-`define range_instrs 7 : 0
+`define write_rd 8
+`define use_rs2 9
+`define range_instrs 9 : 0
+
+`define RS1 0
+`define RS2 1
 
 `endif

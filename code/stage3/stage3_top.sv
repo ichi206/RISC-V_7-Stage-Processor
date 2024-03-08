@@ -3,12 +3,17 @@
 
 module stage3_top (
 	input logic clock, reset, stall, valid,
+	input logic [1 : 0] bypass,
 	input logic [`range_instrs] instr_type,
 	input logic [3 : 0] branch_type,
-	input word rs1_val, rs2_val, imm,
+	input word rs1_read, rs2_read, imm, rs1_bypass_value, rs2_bypass_value,
 	
-	output logic flush,
+	output logic do_flush,
 	output word instruction_addr, jal_addr, eval);
+	
+	word rs1_val, rs2_val;
+	assign rs1_val = bypass[`RS1] ? rs1_bypass_value : rs1_read;
+	assign rs2_val = bypass[`RS2] ? rs2_bypass_value : rs2_read;
 	
 	wire add_or_sub = instr_type[`do_reg] & instr_type[`do_sub] | instr_type[`do_branch];
 	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
@@ -17,7 +22,8 @@ module stage3_top (
 	logic [3 : 0] compare_async;
 	word eval_async;
 	
-	alu arith (.clock, .stall, .add_or_sub,
+	alu arith (
+		.clock, .stall, .add_or_sub,
 		.arg1(rs1_val), .arg2,
 		.compare_async,
 		.eval_async, .eval);
@@ -37,6 +43,7 @@ module stage3_top (
 	program_counter pc (
 		.clock, .reset, .stall, .valid, .jump, .jalr,
 		.jump_offset,
+		.do_flush,
 		.instruction_addr, .ia_plus4(jal_addr));
 	
 endmodule

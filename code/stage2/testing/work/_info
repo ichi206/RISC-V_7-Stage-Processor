@@ -10,36 +10,36 @@ cModel Technology
 dC:/Users/Nick/Documents/EE469/Lab1/code/stage2/testing
 vdecoder
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-DXx4 work 15 decoder_sv_unit 0 22 :C]1GlkeHWSz@Vo=;QINi0
+DXx4 work 15 decoder_sv_unit 0 22 n`J:mKBiU6<45AU?9X;fL1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
-!s100 ARRhaT<Q:7@VzEPGZ9WHd1
-I2P<JbhGV4WDj9L5gS]I=A1
+!s100 N]@Nm0JN`;6>oo`:X[DF>0
+ICk67MdkCIQ7MI@?XIN>JF2
 !s105 decoder_sv_unit
 S1
-Z2 dc:/users/nick/documents/ee469/lab1/code/stage2/testing
-Z3 w1709181914
+Z2 dC:/Users/Nick/Documents/github/RISC-V_7-Stage-Processor/code/stage2/testing
+Z3 w1709861823
 Z4 8../decoder.sv
 Z5 F../decoder.sv
-L0 38
+L0 40
 Z6 OV;L;10.5b;63
-Z7 !s108 1709181930.000000
+Z7 !s108 1709861841.000000
 Z8 !s107 ..\..\common\definitions.vh|../decoder.sv|
 Z9 !s90 -reportprogress|300|../decoder.sv|
 !i113 1
 Z10 tCvgOpt 0
 Xdecoder_sv_unit
 R0
-V:C]1GlkeHWSz@Vo=;QINi0
+Vn`J:mKBiU6<45AU?9X;fL1
 r1
 !s85 0
 31
 !i10b 1
-!s100 KbAYG7U]e@4KdF[3RecIL2
-I:C]1GlkeHWSz@Vo=;QINi0
+!s100 HTjT3^3S2Q5l=0A8ZMiUQ2
+In`J:mKBiU6<45AU?9X;fL1
 !i103 1
 S1
 R2
@@ -47,7 +47,7 @@ R3
 R4
 R5
 F..\..\common\definitions.vh
-Z11 L0 22
+L0 21
 R6
 R7
 R8
@@ -66,7 +66,7 @@ r1
 IWH<WTW5:N7he6XX<bE=ok1
 !s105 decoder_test_sv_unit
 S1
-R2
+Z11 dc:/users/nick/documents/ee469/lab1/code/stage2/testing
 Z12 w1709181488
 Z13 8decoder_test.sv
 Z14 Fdecoder_test.sv
@@ -88,12 +88,12 @@ r1
 If:[gRNWVO=3ERoEoWmYCB1
 !i103 1
 S1
-R2
+R11
 R12
 R13
 R14
 F../../common/definitions.vh
-R11
+Z18 L0 22
 R6
 R15
 R16
@@ -112,15 +112,15 @@ r1
 IgHjU:S9V4^SEJf[`nk7mZ1
 !s105 instruction_memory_sv_unit
 S1
-R2
+R11
 w1709171445
-Z18 8../../stage1/instruction_memory.sv
-Z19 F../../stage1/instruction_memory.sv
+Z19 8../../stage1/instruction_memory.sv
+Z20 F../../stage1/instruction_memory.sv
 L0 4
 R6
-R7
-Z20 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
-Z21 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
+Z21 !s108 1709181930.000000
+Z22 !s107 ..\..\stage1\..\common\definitions.vh|../../stage1/instruction_memory.sv|
+Z23 !s90 -reportprogress|300|../../stage1/instruction_memory.sv|
 !i113 1
 R10
 Xinstruction_memory_sv_unit
@@ -134,16 +134,16 @@ r1
 I?jdk]D>E06_R1Hn6N9<<[1
 !i103 1
 S1
-R2
-Z22 w1709175403
-R18
-R19
-F..\..\stage1\..\common\definitions.vh
 R11
-R6
-R7
+Z24 w1709175403
+R19
 R20
+F..\..\stage1\..\common\definitions.vh
+R18
+R6
 R21
+R22
+R23
 !i113 1
 R10
 vprogram_counter
@@ -158,15 +158,15 @@ r1
 I6L8NiBRPWKSCEiC[44Nc80
 !s105 program_counter_sv_unit
 S1
-R2
+R11
 w1709170174
-Z23 8../../stage5/program_counter.sv
-Z24 F../../stage5/program_counter.sv
+Z25 8../../stage5/program_counter.sv
+Z26 F../../stage5/program_counter.sv
 L0 4
 R6
 R15
-Z25 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
-Z26 !s90 -reportprogress|300|../../stage5/program_counter.sv|
+Z27 !s107 ..\..\stage5\..\common\definitions.vh|../../stage5/program_counter.sv|
+Z28 !s90 -reportprogress|300|../../stage5/program_counter.sv|
 !i113 1
 R10
 Xprogram_counter_sv_unit
@@ -180,15 +180,15 @@ r1
 IQHKiCS<l^=0U1:i2kmY`n3
 !i103 1
 S1
-R2
-R22
-R23
-R24
-F..\..\stage5\..\common\definitions.vh
 R11
-R6
-R15
+R24
 R25
 R26
+F..\..\stage5\..\common\definitions.vh
+R18
+R6
+R15
+R27
+R28
 !i113 1
 R10

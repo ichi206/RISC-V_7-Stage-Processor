@@ -30,12 +30,14 @@ module program_counter
 	end
 	
 	always_ff @(posedge clock) begin
-		if (reset)
-			instruction_addr = `BOOT_ADDRESS;
+		if (reset) begin
+			instruction_addr <= `BOOT_ADDRESS;
+			do_flush <= 0;
+		end
 		else if (!stall) begin
-			ia_plus4 = ia_plus4_logic;
-			instruction_addr = instruction_addr_logic;
-			do_flush = do_flush_logic;
+			ia_plus4 <= ia_plus4_logic;
+			instruction_addr <= instruction_addr_logic;
+			do_flush <= do_flush_logic;
 		end
 	end
 

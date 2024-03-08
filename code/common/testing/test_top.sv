@@ -12,9 +12,9 @@ module test_top ();
 	
 	initial begin
 		reset = 1;
-		@(posedge clock)
+		repeat(5) @(posedge clock);
 		reset = 0;
-		repeat(2100) @(posedge clock);
+		repeat(600) @(posedge clock);
 		$stop;
 	end
 	

@@ -20,11 +20,11 @@ module instruction_memory #(parameter program_instructions)
 		$readmemb(program_instructions, mem);
 	
 	always_ff @(posedge clock)
-		instruction_word_addr_delay = instruction_word_addr;
+		instruction_word_addr_delay <= instruction_word_addr;
 	
 	always_ff @(posedge clock) begin
 		if (!stall)
-			instruction = mem[instruction_word_addr_delay];
+			instruction <= mem[instruction_word_addr_delay];
 	end
 
 endmodule

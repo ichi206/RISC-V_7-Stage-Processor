@@ -17,7 +17,7 @@ module alu(
 	
 	always_ff @(posedge clock) begin
 		if (!stall)
-			eval = eval_async;
+			eval <= eval_async;
 	end
 	
 endmodule
