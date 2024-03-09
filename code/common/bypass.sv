@@ -1,9 +1,14 @@
 `include "../common/definitions.vh"
 
 
-function logic [1 : 0] GetDependence(tag rs1, rs2, rd, logic valid, use_rs2, write_rd);
-	GetDependence[`RS1] = valid && write_rd && rs1 != 0 && rs1 == rd;
-	GetDependence[`RS2] = valid && use_rs2 && write_rd && rs2 != 0 && rs2 == rd;
+function logic [1 : 0] GetS3Dependence(tag rs1, rs2, rd, logic valid, use_rs2, write_rd);
+	GetS3Dependence[`RS1] = valid && write_rd && rs1 != 0 && rs1 == rd;
+	GetS3Dependence[`RS2] = valid && use_rs2 && write_rd && rs2 != 0 && rs2 == rd;
+endfunction
+
+
+function logic GetS4Dependence(tag rs2, rd, logic do_store, valid, write_rd);
+	return do_store && valid && write_rd && rs2 != 0 && rs2 == rd;
 endfunction
 
 
@@ -11,39 +16,50 @@ module bypass (
 	input logic clock, reset,
 	input logic s4a_valid, s4b_valid, s5_valid,
 	input logic [`range_instrs] s3_instr_type, s4a_instr_type, s4b_instr_type, s5_instr_type,
-	input tag s3_rs1, s3_rs2, s4a_rd, s4b_rd, s5_rd,
+	input tag s3_rs1, s3_rs2, s4a_rs2, s4a_rd, s4b_rd, s5_rd,
 	input word s4a_value, s4b_value, s5_value,
 	
 	output logic stall,
-	output logic [1 : 0] bypass,
-	output word rs1_bypass_value, rs2_bypass_value);
+	output logic [1 : 0] s3_bypass,
+	output logic s4_bypass,
+	output word s3_bypass_rs1, s3_bypass_rs2, s4_bypass_rs2);
 	
-	wire [1 : 0] s4a_dependence = GetDependence(
+	wire [1 : 0] s3_on_s4a = GetS3Dependence(
 		s3_rs1, s3_rs2, s4a_rd, s4a_valid, s3_instr_type[`use_rs2], s4a_instr_type[`write_rd]);
-	wire [1 : 0] s4b_dependence = GetDependence(
+	wire [1 : 0] s3_on_s4b = GetS3Dependence(
 		s3_rs1, s3_rs2, s4b_rd, s4b_valid, s3_instr_type[`use_rs2], s4b_instr_type[`write_rd]);
-	wire [1 : 0] s5_dependence = GetDependence(
+	wire [1 : 0] s3_on_s5 = GetS3Dependence(
 		s3_rs1, s3_rs2, s5_rd, s5_valid, s3_instr_type[`use_rs2], s5_instr_type[`write_rd]);
 	
+	wire s4a_on_s4b = GetS4Dependence(
+		s4a_rs2, s4b_rd, s4a_instr_type[`do_store], s4b_valid, s4b_instr_type[`write_rd]);
+	wire s4a_on_s5 = GetS4Dependence(
+		s4a_rs2, s5_rd, s4a_instr_type[`do_store], s5_valid, s5_instr_type[`write_rd]);
+	
 	assign stall = !reset && (
-		s4a_dependence != 0 && s4a_instr_type[`do_load] ||
-		s4b_dependence != 0 && s4b_instr_type[`do_load]);
-	assign bypass = s4a_dependence | s4b_dependence | s5_dependence;
+		s3_on_s4a != 0 && s4a_instr_type[`do_load] ||
+		s3_on_s4b != 0 && s4b_instr_type[`do_load] ||
+		s4a_on_s4b && s4b_instr_type[`do_load]);
+	
+	assign s3_bypass = s3_on_s4a | s3_on_s4b | s3_on_s5;
+	assign s4_bypass = s4a_on_s4b | s4a_on_s5;
 	
 	always_comb begin
-		if (s4a_dependence[`RS1])
-			rs1_bypass_value = s4a_value;
-		else if (s4b_dependence[`RS1])
-			rs1_bypass_value = s4b_value;
+		if (s3_on_s4a[`RS1])
+			s3_bypass_rs1 = s4a_value;
+		else if (s3_on_s4b[`RS1])
+			s3_bypass_rs1 = s4b_value;
 		else
-			rs1_bypass_value = s5_value;
+			s3_bypass_rs1 = s5_value;
 		
-		if (s4a_dependence[`RS2])
-			rs2_bypass_value = s4a_value;
-		else if (s4b_dependence[`RS2])
-			rs2_bypass_value = s4b_value;
+		if (s3_on_s4a[`RS2])
+			s3_bypass_rs2 = s4a_value;
+		else if (s3_on_s4b[`RS2])
+			s3_bypass_rs2 = s4b_value;
 		else
-			rs2_bypass_value = s5_value;
+			s3_bypass_rs2 = s5_value;
 	end
+	
+	assign s4_bypass_rs2 = s4a_on_s4b ? s4b_value : s5_value;
 
 endmodule

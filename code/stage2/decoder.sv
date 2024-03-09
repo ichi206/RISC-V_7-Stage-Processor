@@ -59,11 +59,12 @@ module decoder(
 	assign instr_type_logic[`do_branch]  = op == `opcode_branch;
 	assign instr_type_logic[`do_load]    = op == `opcode_load;
 	assign instr_type_logic[`do_store]   = op == `opcode_store;
-	assign instr_type_logic[`do_sub]     = funct7 == 7'h20;
+	assign instr_type_logic[`do_sub] =
+		(instr_type_logic[`do_reg] && funct7 == 7'h20) | instr_type_logic[`do_branch];
 	assign instr_type_logic[`write_rd] =
 		~(instr_type_logic[`do_store] | instr_type_logic[`do_branch]);
 	assign instr_type_logic[`use_rs2] =
-		instr_type_logic[`do_reg] | instr_type_logic[`do_branch] | instr_type_logic[`do_store];
+		instr_type_logic[`do_reg] | instr_type_logic[`do_branch];
 	
 	logic [3 : 0] branch_type_logic;
 	assign branch_type_logic = GetBranchType(funct3);

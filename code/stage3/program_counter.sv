@@ -7,12 +7,12 @@ module program_counter
 	input word s3_instruction_addr, jump_offset,
 	
 	output logic do_flush,
-	output word s1a_instruction_addr, ia_plus4
+	output word s1a_instruction_addr, jal_addr
 );
 
 	logic do_flush_logic;
-	word ia_plus4_logic, instruction_addr_logic;
-	assign ia_plus4_logic = s3_instruction_addr + 4;
+	word ia_plus4_logic, jal_addr_logic, instruction_addr_logic;
+	assign ia_plus4_logic = s1a_instruction_addr + 4;
 	
 	always_comb begin
 		if (jump && valid) begin
@@ -35,7 +35,7 @@ module program_counter
 			do_flush <= 0;
 		end
 		else if (!stall) begin
-			ia_plus4 <= ia_plus4_logic;
+			jal_addr <= ia_plus4_logic;
 			s1a_instruction_addr <= instruction_addr_logic;
 			do_flush <= do_flush_logic;
 		end

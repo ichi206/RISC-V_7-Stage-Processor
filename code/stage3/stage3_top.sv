@@ -15,7 +15,6 @@ module stage3_top (
 	assign rs1_val = bypass[`RS1] ? rs1_bypass_value : rs1_read;
 	assign rs2_val = bypass[`RS2] ? rs2_bypass_value : rs2_read;
 	
-	wire add_or_sub = instr_type[`do_reg] & instr_type[`do_sub] | instr_type[`do_branch];
 	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
 	word arg2;
 	assign arg2 = use_rs2 ? rs2_val : imm;
@@ -23,7 +22,7 @@ module stage3_top (
 	word eval_async;
 	
 	alu arith (
-		.clock, .stall, .add_or_sub,
+		.clock, .stall, .add_or_sub(instr_type[`do_sub]),
 		.arg1(rs1_val), .arg2,
 		.compare_async,
 		.eval_async, .eval);
@@ -44,6 +43,6 @@ module stage3_top (
 		.clock, .reset, .stall, .valid, .jump, .jalr,
 		.s3_instruction_addr, .jump_offset,
 		.do_flush,
-		.s1a_instruction_addr, .ia_plus4(jal_addr));
+		.s1a_instruction_addr, .jal_addr);
 	
 endmodule
