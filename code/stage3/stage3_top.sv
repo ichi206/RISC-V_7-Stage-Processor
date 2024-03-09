@@ -6,10 +6,10 @@ module stage3_top (
 	input logic [1 : 0] bypass,
 	input logic [`range_instrs] instr_type,
 	input logic [3 : 0] branch_type,
-	input word rs1_read, rs2_read, imm, rs1_bypass_value, rs2_bypass_value,
+	input word s3_instruction_addr, rs1_read, rs2_read, imm, rs1_bypass_value, rs2_bypass_value,
 	
 	output logic do_flush,
-	output word instruction_addr, jal_addr, eval);
+	output word s1a_instruction_addr, jal_addr, eval);
 	
 	word rs1_val, rs2_val;
 	assign rs1_val = bypass[`RS1] ? rs1_bypass_value : rs1_read;
@@ -42,8 +42,8 @@ module stage3_top (
 	
 	program_counter pc (
 		.clock, .reset, .stall, .valid, .jump, .jalr,
-		.jump_offset,
+		.s3_instruction_addr, .jump_offset,
 		.do_flush,
-		.instruction_addr, .ia_plus4(jal_addr));
+		.s1a_instruction_addr, .ia_plus4(jal_addr));
 	
 endmodule

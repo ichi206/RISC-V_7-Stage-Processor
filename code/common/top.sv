@@ -6,12 +6,19 @@ module top #(parameter program_file) (
 	output logic [7 : 0] display);
 
 	logic stall, do_flush;
-	word long_instruction_addr, instruction;
+	word s1a_instruction_addr, s1b_instruction_addr, s2_instruction_addr, s3_instruction_addr;
+	word instruction;
+	
+	always_ff @(posedge clock)
+		s1b_instruction_addr <= s1a_instruction_addr;
 	
 	instruction_memory #(program_file) instrs (
 		.clock, .stall,
-		.long_instruction_addr,
+		.long_instruction_addr(s1a_instruction_addr),
 		.instruction);
+	
+	always_ff @(posedge clock)
+		s2_instruction_addr <= s1b_instruction_addr;
 	
 	logic [`range_instrs] s3_instr_type, s4a_instr_type, s4b_instr_type, s5_instr_type;
 	logic [3 : 0] branch_type;
@@ -26,6 +33,9 @@ module top #(parameter program_file) (
 		.rs1_async, .rs2_async, .rs1(s3_rs1), .rs2(s3_rs2), .rd(s3_rd),
 		.imm);
 	
+	always_ff @(posedge clock)
+		s3_instruction_addr <= s2_instruction_addr;
+	
 	word rs1_read, rs2_read, rs1_bypass_value, rs2_bypass_value;
 	word s4a_jal_addr, s4b_jal_addr, s5_jal_addr;
 	word s4a_eval, s4b_eval, s5_eval;
@@ -36,9 +46,9 @@ module top #(parameter program_file) (
 		.clock, .reset, .stall, .valid(s3_valid),
 		.bypass,
 		.instr_type(s3_instr_type), .branch_type,
-		.rs1_read, .rs2_read, .imm, .rs1_bypass_value, .rs2_bypass_value,
+		.s3_instruction_addr, .rs1_read, .rs2_read, .imm, .rs1_bypass_value, .rs2_bypass_value,
 		.do_flush,
-		.instruction_addr(long_instruction_addr),
+		.s1a_instruction_addr,
 		.jal_addr(s4a_jal_addr), .eval(s4a_eval));
 	
 	always_ff @(posedge clock) begin
@@ -97,6 +107,6 @@ module top #(parameter program_file) (
 		.clock, .do_flush,
 		.valid(s3_valid));
 	
-	assign display = long_instruction_addr[7 : 0];
+	assign display = s1a_instruction_addr[7 : 0];
 	
 endmodule

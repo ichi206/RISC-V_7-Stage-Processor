@@ -63,7 +63,7 @@ module decoder(
 	assign instr_type_logic[`write_rd] =
 		~(instr_type_logic[`do_store] | instr_type_logic[`do_branch]);
 	assign instr_type_logic[`use_rs2] =
-		instr_type_logic[`do_reg] | instr_type_logic[`do_branch];
+		instr_type_logic[`do_reg] | instr_type_logic[`do_branch] | instr_type_logic[`do_store];
 	
 	logic [3 : 0] branch_type_logic;
 	assign branch_type_logic = GetBranchType(funct3);
