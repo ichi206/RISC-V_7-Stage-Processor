@@ -33,3 +33,6 @@ JAL/JALR
 
 ![alt text](image.png)
 
+## Linted with Verilator using the following command
+
+verilator --lint-only --timing -I../../../memfiles -I.. -I../../stage1 -I../../stage2 -I../../stage3 -I../../stage4 -I../../stage5 test_top.sv
