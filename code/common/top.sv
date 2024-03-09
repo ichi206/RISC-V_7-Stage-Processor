@@ -10,8 +10,10 @@ module top #(parameter program_file) (
 	word s1b_jal_addr, s2_jal_addr, s3_jal_addr, s4a_jal_addr, s4b_jal_addr, s5_jal_addr;
 	word instruction;
 	
-	always_ff @(posedge clock)
-		s1b_instruction_addr <= s1a_instruction_addr;
+	always_ff @(posedge clock) begin
+		if (!stall)
+			s1b_instruction_addr <= s1a_instruction_addr;
+	end
 	
 	instruction_memory #(program_file) instrs (
 		.clock, .stall,
@@ -19,8 +21,10 @@ module top #(parameter program_file) (
 		.instruction);
 	
 	always_ff @(posedge clock) begin
-		s2_instruction_addr <= s1b_instruction_addr;
-		s2_jal_addr <= s1b_jal_addr;
+		if (!stall) begin
+			s2_instruction_addr <= s1b_instruction_addr;
+			s2_jal_addr <= s1b_jal_addr;
+		end
 	end
 	
 	logic [`range_instrs] s3_instr_type, s4a_instr_type, s4b_instr_type, s5_instr_type;
@@ -37,11 +41,13 @@ module top #(parameter program_file) (
 		.imm);
 	
 	always_ff @(posedge clock) begin
-		s3_instruction_addr <= s2_instruction_addr;
-		s3_jal_addr <= s2_jal_addr;
+		if (!stall) begin
+			s3_instruction_addr <= s2_instruction_addr;
+			s3_jal_addr <= s2_jal_addr;
+		end
 	end
 	
-	word s3_rs1_read, s3_rs2_read, s4a_rs2_read;
+	word s3_rs1_read, s3_rs2_read, s4a_rs2_val;
 	word s3_bypass_rs1, s3_bypass_rs2, s4_bypass_rs2;
 	word s4a_eval, s4b_eval, s5_eval;
 	logic s3_valid, s4a_valid, s4b_valid, s5_valid;
@@ -55,7 +61,7 @@ module top #(parameter program_file) (
 		.s3_instruction_addr, .rs1_read(s3_rs1_read), .rs2_read(s3_rs2_read), .imm,
 		.rs1_bypass_value(s3_bypass_rs1), .rs2_bypass_value(s3_bypass_rs2),
 		.do_flush,
-		.s1a_instruction_addr,
+		.s4a_rs2_val, .s1a_instruction_addr,
 		.jal_addr(s1b_jal_addr), .eval(s4a_eval));
 	
 	always_ff @(posedge clock) begin
@@ -65,7 +71,6 @@ module top #(parameter program_file) (
 		s4a_rs2 <= s3_rs2;
 		s4a_rd <= s3_rd;
 		s4a_jal_addr <= s3_jal_addr;
-		s4a_rs2_read <= s3_rs2_read;
 	end
 	
 	always_ff @(posedge clock) begin
@@ -81,9 +86,9 @@ module top #(parameter program_file) (
 	word memory_read_value;
 	
 	data_memory_top mem (
-		.clock, .valid(s4a_valid), .bypass(s4_bypass),
+		.clock, .valid(s4a_valid),
 		.instr_type(s4a_instr_type), .load_type(s4a_load_type),
-		.long_addr(s4a_eval), .rs2_value(s4a_rs2_read), .bypass_value(s4_bypass_rs2),
+		.long_addr(s4a_eval), .rs2_value(s4a_rs2_val),
 		.read_value(memory_read_value));
 	
 	always_ff @(posedge clock) begin
@@ -98,7 +103,7 @@ module top #(parameter program_file) (
 	word rd_value_async;
 	
 	stage5_top s5 (
-		.clock, .valid(s5_valid), .sign_extend(1'b0),
+		.clock, .stall, .valid(s5_valid), .sign_extend(1'b0),
 		.instr_type(s5_instr_type), .load_type(s5_load_type),
 		.rs1(rs1_async), .rs2(rs2_async), .rd(s5_rd),
 		.jal_addr(s5_jal_addr), .alu_output(s5_eval), .memory_read_value,
@@ -110,11 +115,11 @@ module top #(parameter program_file) (
 		.s3_instr_type, .s4a_instr_type, .s4b_instr_type, .s5_instr_type,
 		.s3_rs1, .s3_rs2, .s4a_rs2, .s4a_rd, .s4b_rd, .s5_rd,
 		.s4a_value(s4a_eval), .s4b_value(s4b_eval), .s5_value(rd_value_async),
-		.stall, .s3_bypass, .s4_bypass,
-		.s3_bypass_rs1, .s3_bypass_rs2, .s4_bypass_rs2);
+		.stall, .s3_bypass,
+		.s3_bypass_rs1, .s3_bypass_rs2);
 	
 	flush f (
-		.clock, .do_flush,
+		.clock, .reset, .stall, .do_flush,
 		.valid(s3_valid));
 	
 	assign display = s1a_instruction_addr[7 : 0];

@@ -9,11 +9,14 @@ module stage3_top (
 	input word s3_instruction_addr, rs1_read, rs2_read, imm, rs1_bypass_value, rs2_bypass_value,
 	
 	output logic do_flush,
-	output word s1a_instruction_addr, jal_addr, eval);
+	output word s4a_rs2_val, s1a_instruction_addr, jal_addr, eval);
 	
 	word rs1_val, rs2_val;
 	assign rs1_val = bypass[`RS1] ? rs1_bypass_value : rs1_read;
 	assign rs2_val = bypass[`RS2] ? rs2_bypass_value : rs2_read;
+	
+	always_ff @(posedge clock)
+		s4a_rs2_val <= rs2_val;
 	
 	wire use_rs2 = instr_type[`do_reg] | instr_type[`do_branch];
 	word arg2;

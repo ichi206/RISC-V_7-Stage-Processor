@@ -2,7 +2,7 @@
 
 
 module stage5_top (
-	input logic clock, valid, sign_extend,
+	input logic clock, stall, valid, sign_extend,
 	input logic [`range_instrs] instr_type,
 	input logic [2 : 0] load_type,
 	input tag rs1, rs2, rd,
@@ -33,7 +33,7 @@ module stage5_top (
 		instr_type[`do_store] | instr_type[`do_branch]);
 	
 	registers regs (
-		.clock, .valid, .write_rd(instr_type[`write_rd]),
+		.clock, .stall, .valid, .write_rd(instr_type[`write_rd]),
 		.rs1, .rs2, .rd,
 		.rd_value(rd_value_async),
 		.rs1_read, .rs2_read);
