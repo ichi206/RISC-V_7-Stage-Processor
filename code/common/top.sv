@@ -122,6 +122,14 @@ module top #(parameter program_file) (
 		.clock, .reset, .stall, .do_flush,
 		.valid(s3_valid));
 	
-	assign display = s1a_instruction_addr[7 : 0];
+	logic [7 : 0] display_logic;
+	assign display_logic = s5_instr_type[`write_rd] && s5_rd == 5'd10 ? rd_value_async[7 : 0] : display;
+	
+	always_ff @(posedge clock) begin
+		if (reset)
+			display <= {7{1'b1}};
+		else
+			display <= display_logic;
+	end
 	
 endmodule

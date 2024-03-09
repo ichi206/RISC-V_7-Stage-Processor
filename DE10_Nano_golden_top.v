@@ -149,6 +149,6 @@ module DE10_Nano_golden_top(
 //  Structural coding
 //=======================================================
 
-	top #("fib.mif") cpu (clock_in, reset_in, LED);
+	top #("memfiles/fib.mif") cpu (clock_in, reset_in, LED);
 
 endmodule

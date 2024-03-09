@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1
-Tue Mar  5 11:11:35 2024
+Sat Mar  9 13:32:16 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -20,22 +20,22 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
  12. Registers Added for RAM Pass-Through Logic
  13. Registers Packed Into Inferred Megafunctions
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_5io1:auto_generated
- 16. Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_5io1:auto_generated
+ 15. Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_d2k1:auto_generated
+ 16. Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_d2k1:auto_generated
  17. Source assignments for top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0|altsyncram_m0q1:auto_generated
  18. Source assignments for top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb2_rtl_0|altsyncram_m0q1:auto_generated
  19. Source assignments for top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb1_rtl_0|altsyncram_m0q1:auto_generated
  20. Source assignments for top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb0_rtl_0|altsyncram_m0q1:auto_generated
- 21. Parameter Settings for User Entity Instance: top:cpu|instruction_memory:instrs
- 22. Parameter Settings for Inferred Entity Instance: top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0
- 23. Parameter Settings for Inferred Entity Instance: top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1
- 24. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0
- 25. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb2_rtl_0
- 26. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb1_rtl_0
- 27. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb0_rtl_0
- 28. altsyncram Parameter Settings by Entity Instance
- 29. Port Connectivity Checks: "top:cpu|stage5_top:s5"
- 30. Port Connectivity Checks: "top:cpu|control:c"
+ 21. Parameter Settings for User Entity Instance: top:cpu
+ 22. Parameter Settings for User Entity Instance: top:cpu|instruction_memory:instrs
+ 23. Parameter Settings for Inferred Entity Instance: top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0
+ 24. Parameter Settings for Inferred Entity Instance: top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1
+ 25. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0
+ 26. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb2_rtl_0
+ 27. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb1_rtl_0
+ 28. Parameter Settings for Inferred Entity Instance: top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb0_rtl_0
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. Port Connectivity Checks: "top:cpu|stage5_top:s5"
  31. Post-Synthesis Netlist Statistics for Top Partition
  32. Elapsed Time Per Partition
  33. Analysis & Synthesis Messages
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar  5 11:11:35 2024          ;
+; Analysis & Synthesis Status     ; Successful - Sat Mar  9 13:32:16 2024          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; lab1                                           ;
 ; Top-level Entity Name           ; DE10_Nano_golden_top                           ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 294                                            ;
+; Total registers                 ; 781                                            ;
 ; Total pins                      ; 145                                            ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 10,240                                         ;
@@ -197,37 +197,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+--------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+--------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; code/stage5/stage5_top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage5/stage5_top.sv                    ;         ;
-; code/stage5/registers.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage5/registers.sv                     ;         ;
-; code/stage5/program_counter.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage5/program_counter.sv               ;         ;
-; code/stage5/data_memory_read_interface.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage5/data_memory_read_interface.sv    ;         ;
-; code/stage4/data_memory_write_interface.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_write_interface.sv   ;         ;
-; code/stage4/data_memory_top.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_top.sv               ;         ;
-; code/stage4/data_memory.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory.sv                   ;         ;
-; code/stage3/alu.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage3/alu.sv                           ;         ;
-; code/stage2/decoder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage2/decoder.sv                       ;         ;
-; code/stage1/instruction_memory.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv            ;         ;
-; code/common/top.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv                           ;         ;
-; code/common/control.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/EE469/Lab1/code/common/control.sv                       ;         ;
-; DE10_Nano_golden_top.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v                       ;         ;
-; code/common/definitions.vh                 ; yes             ; Auto-Found Unspecified File  ; C:/Users/Nick/Documents/EE469/Lab1/code/common/definitions.vh                   ;         ;
-; altsyncram.tdf                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal231.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc        ;         ;
-; a_rdenreg.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_5io1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nick/Documents/EE469/Lab1/db/altsyncram_5io1.tdf                       ;         ;
-; db/altsyncram_m0q1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nick/Documents/EE469/Lab1/db/altsyncram_m0q1.tdf                       ;         ;
-+--------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++--------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ; Library ;
++--------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; DE10_Nano_golden_top.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v                     ;         ;
+; code/common/top.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv                         ;         ;
+; code/common/flush.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/flush.sv                       ;         ;
+; code/common/bypass.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/bypass.sv                      ;         ;
+; code/stage5/stage5_top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/stage5_top.sv                  ;         ;
+; code/stage5/registers.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/registers.sv                   ;         ;
+; code/stage5/data_memory_read_interface.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/data_memory_read_interface.sv  ;         ;
+; code/stage4/data_memory_write_interface.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_write_interface.sv ;         ;
+; code/stage4/data_memory_top.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_top.sv             ;         ;
+; code/stage4/data_memory.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory.sv                 ;         ;
+; code/stage3/stage3_top.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/stage3_top.sv                  ;         ;
+; code/stage3/program_counter.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/program_counter.sv             ;         ;
+; code/stage3/alu.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/alu.sv                         ;         ;
+; code/stage2/decoder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage2/decoder.sv                     ;         ;
+; code/stage1/instruction_memory.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv          ;         ;
+; code/common/definitions.vh                 ; yes             ; Auto-Found Unspecified File  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/definitions.vh                 ;         ;
+; altsyncram.tdf                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf                           ;         ;
+; stratix_ram_block.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                    ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc                              ;         ;
+; lpm_decode.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.inc                           ;         ;
+; aglobal231.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                           ;         ;
+; a_rdenreg.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_rdenreg.inc                            ;         ;
+; altrom.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc                               ;         ;
+; altram.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc                               ;         ;
+; altdpram.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc                             ;         ;
+; db/altsyncram_d2k1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/db/altsyncram_d2k1.tdf                     ;         ;
+; db/altsyncram_m0q1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/db/altsyncram_m0q1.tdf                     ;         ;
++--------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -235,16 +237,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 255         ;
+; Estimate of Logic utilization (ALMs needed) ; 462         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 385         ;
-;     -- 7 input functions                    ; 7           ;
-;     -- 6 input functions                    ; 47          ;
-;     -- 5 input functions                    ; 164         ;
-;     -- 4 input functions                    ; 63          ;
-;     -- <=3 input functions                  ; 104         ;
+; Combinational ALUT usage for logic          ; 532         ;
+;     -- 7 input functions                    ; 4           ;
+;     -- 6 input functions                    ; 150         ;
+;     -- 5 input functions                    ; 161         ;
+;     -- 4 input functions                    ; 88          ;
+;     -- <=3 input functions                  ; 129         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 294         ;
+; Dedicated logic registers                   ; 781         ;
 ;                                             ;             ;
 ; I/O pins                                    ; 145         ;
 ; Total MLAB memory bits                      ; 0           ;
@@ -253,9 +255,9 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; counter[15] ;
-; Maximum fan-out                             ; 375         ;
-; Total fan-out                               ; 4112        ;
-; Average fan-out                             ; 3.54        ;
+; Maximum fan-out                             ; 862         ;
+; Total fan-out                               ; 6169        ;
+; Average fan-out                             ; 3.44        ;
 +---------------------------------------------+-------------+
 
 
@@ -264,12 +266,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name                 ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |DE10_Nano_golden_top                           ; 385 (19)            ; 294 (17)                  ; 10240             ; 0          ; 145  ; 0            ; |DE10_Nano_golden_top                                                                                                      ; DE10_Nano_golden_top        ; work         ;
-;    |top:cpu|                                    ; 366 (0)             ; 277 (0)                   ; 10240             ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu                                                                                              ; top                         ; work         ;
-;       |alu:arith|                               ; 104 (104)           ; 34 (34)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|alu:arith                                                                                    ; alu                         ; work         ;
-;       |control:c|                               ; 4 (4)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|control:c                                                                                    ; control                     ; work         ;
-;       |data_memory_top:mem|                     ; 37 (0)              ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem                                                                          ; data_memory_top             ; work         ;
-;          |data_memory:dm|                       ; 5 (5)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm                                                           ; data_memory                 ; work         ;
+; |DE10_Nano_golden_top                           ; 532 (18)            ; 781 (17)                  ; 10240             ; 0          ; 145  ; 0            ; |DE10_Nano_golden_top                                                                                                      ; DE10_Nano_golden_top        ; work         ;
+;    |top:cpu|                                    ; 514 (10)            ; 764 (362)                 ; 10240             ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu                                                                                              ; top                         ; work         ;
+;       |bypass:b|                                ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|bypass:b                                                                                     ; bypass                      ; work         ;
+;       |data_memory_top:mem|                     ; 20 (1)              ; 37 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem                                                                          ; data_memory_top             ; work         ;
+;          |data_memory:dm|                       ; 4 (4)               ; 37 (37)                   ; 8192              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm                                                           ; data_memory                 ; work         ;
 ;             |altsyncram:memb0_rtl_0|            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb0_rtl_0                                    ; altsyncram                  ; work         ;
 ;                |altsyncram_m0q1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb0_rtl_0|altsyncram_m0q1:auto_generated     ; altsyncram_m0q1             ; work         ;
 ;             |altsyncram:memb1_rtl_0|            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb1_rtl_0                                    ; altsyncram                  ; work         ;
@@ -278,17 +279,20 @@ https://fpgasoftware.intel.com/eula.
 ;                |altsyncram_m0q1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb2_rtl_0|altsyncram_m0q1:auto_generated     ; altsyncram_m0q1             ; work         ;
 ;             |altsyncram:memb3_rtl_0|            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0                                    ; altsyncram                  ; work         ;
 ;                |altsyncram_m0q1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0|altsyncram_m0q1:auto_generated     ; altsyncram_m0q1             ; work         ;
-;          |data_memory_write_interface:dmwi|     ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory_write_interface:dmwi                                         ; data_memory_write_interface ; work         ;
-;       |decoder:dec|                             ; 29 (29)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|decoder:dec                                                                                  ; decoder                     ; work         ;
-;       |instruction_memory:instrs|               ; 26 (26)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|instruction_memory:instrs                                                                    ; instruction_memory          ; work         ;
-;       |stage5_top:s5|                           ; 166 (59)            ; 180 (0)                   ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5                                                                                ; stage5_top                  ; work         ;
+;          |data_memory_write_interface:dmwi|     ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory_write_interface:dmwi                                         ; data_memory_write_interface ; work         ;
+;       |decoder:dec|                             ; 32 (32)             ; 43 (43)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|decoder:dec                                                                                  ; decoder                     ; work         ;
+;       |flush:f|                                 ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|flush:f                                                                                      ; flush                       ; work         ;
+;       |instruction_memory:instrs|               ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|instruction_memory:instrs                                                                    ; instruction_memory          ; work         ;
+;       |stage3_top:s3|                           ; 262 (82)            ; 129 (32)                  ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3                                                                                ; stage3_top                  ; work         ;
+;          |alu:arith|                            ; 50 (50)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|alu:arith                                                                      ; alu                         ; work         ;
+;          |program_counter:pc|                   ; 130 (130)           ; 65 (65)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|program_counter:pc                                                             ; program_counter             ; work         ;
+;       |stage5_top:s5|                           ; 133 (55)            ; 158 (0)                   ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5                                                                                ; stage5_top                  ; work         ;
 ;          |data_memory_read_interface:dmri|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|data_memory_read_interface:dmri                                                ; data_memory_read_interface  ; work         ;
-;          |program_counter:pc|                   ; 96 (96)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|program_counter:pc                                                             ; program_counter             ; work         ;
-;          |registers:regs|                       ; 10 (10)             ; 148 (148)                 ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs                                                                 ; registers                   ; work         ;
+;          |registers:regs|                       ; 77 (77)             ; 158 (158)                 ; 2048              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs                                                                 ; registers                   ; work         ;
 ;             |altsyncram:register_values_rtl_0|  ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0                                ; altsyncram                  ; work         ;
-;                |altsyncram_5io1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_5io1:auto_generated ; altsyncram_5io1             ; work         ;
+;                |altsyncram_d2k1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_d2k1:auto_generated ; altsyncram_d2k1             ; work         ;
 ;             |altsyncram:register_values_rtl_1|  ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1                                ; altsyncram                  ; work         ;
-;                |altsyncram_5io1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_5io1:auto_generated ; altsyncram_5io1             ; work         ;
+;                |altsyncram_d2k1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_d2k1:auto_generated ; altsyncram_d2k1             ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -302,41 +306,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb1_rtl_0|altsyncram_m0q1:auto_generated|ALTSYNCRAM     ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None ;
 ; top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb2_rtl_0|altsyncram_m0q1:auto_generated|ALTSYNCRAM     ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None ;
 ; top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0|altsyncram_m0q1:auto_generated|ALTSYNCRAM     ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None ;
-; top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_5io1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
-; top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_5io1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
+; top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_d2k1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
+; top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_d2k1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; None ;
 +-----------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                   ;
-+----------------------------------------------------------------------+---------------------------------------------------------------+
-; Register name                                                        ; Reason for Removal                                            ;
-+----------------------------------------------------------------------+---------------------------------------------------------------+
-; top:cpu|alu:arith|compare[1]                                         ; Merged with top:cpu|alu:arith|compare[0]                      ;
-; top:cpu|alu:arith|compare[3]                                         ; Merged with top:cpu|alu:arith|compare[2]                      ;
-; top:cpu|decoder:dec|imm[20..30]                                      ; Merged with top:cpu|decoder:dec|imm[31]                       ;
-; top:cpu|instruction_memory:instrs|instruction[0]                     ; Merged with top:cpu|instruction_memory:instrs|instruction[1]  ;
-; top:cpu|instruction_memory:instrs|instruction[17,19]                 ; Merged with top:cpu|instruction_memory:instrs|instruction[12] ;
-; top:cpu|instruction_memory:instrs|instruction[28,29,31]              ; Merged with top:cpu|instruction_memory:instrs|instruction[27] ;
-; top:cpu|decoder:dec|imm[7..9]                                        ; Merged with top:cpu|decoder:dec|imm[31]                       ;
-; top:cpu|instruction_memory:instrs|instruction[11]                    ; Stuck at GND due to stuck port data_in                        ;
-; top:cpu|decoder:dec|rd[4]                                            ; Stuck at GND due to stuck port data_in                        ;
-; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[9] ; Stuck at GND due to stuck port data_in                        ;
-; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[9] ; Stuck at GND due to stuck port data_in                        ;
-; top:cpu|decoder:dec|imm[12,17]                                       ; Merged with top:cpu|decoder:dec|imm[19]                       ;
-; Total Number of Removed Registers = 28                               ;                                                               ;
-+----------------------------------------------------------------------+---------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                    ;
++-----------------------------------------------------------------------+---------------------------------------------------------------+
+; Register name                                                         ; Reason for Removal                                            ;
++-----------------------------------------------------------------------+---------------------------------------------------------------+
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[2]         ; Merged with top:cpu|s4b_eval[2]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[3]         ; Merged with top:cpu|s4b_eval[3]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[4]         ; Merged with top:cpu|s4b_eval[4]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[5]         ; Merged with top:cpu|s4b_eval[5]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[6]         ; Merged with top:cpu|s4b_eval[6]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[7]         ; Merged with top:cpu|s4b_eval[7]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[8]         ; Merged with top:cpu|s4b_eval[8]                               ;
+; top:cpu|data_memory_top:mem|data_memory:dm|long_addr_delay[9]         ; Merged with top:cpu|s4b_eval[9]                               ;
+; top:cpu|decoder:dec|imm[21..31]                                       ; Merged with top:cpu|decoder:dec|imm[20]                       ;
+; top:cpu|instruction_memory:instrs|instruction[1]                      ; Merged with top:cpu|instruction_memory:instrs|instruction[0]  ;
+; top:cpu|instruction_memory:instrs|instruction[17,19]                  ; Merged with top:cpu|instruction_memory:instrs|instruction[12] ;
+; top:cpu|instruction_memory:instrs|instruction[28,29,31]               ; Merged with top:cpu|instruction_memory:instrs|instruction[27] ;
+; top:cpu|decoder:dec|imm[7,9,20]                                       ; Merged with top:cpu|decoder:dec|imm[8]                        ;
+; top:cpu|decoder:dec|load_type[1]                                      ; Merged with top:cpu|decoder:dec|rs1[2]                        ;
+; top:cpu|decoder:dec|rs1[4]                                            ; Merged with top:cpu|decoder:dec|rs1[2]                        ;
+; top:cpu|instruction_memory:instrs|instruction[11]                     ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|decoder:dec|rd[4]                                             ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|s4a_rd[4]                                                     ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|s4b_rd[4]                                                     ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|s5_rd[4]                                                      ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[14] ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[14] ; Stuck at GND due to stuck port data_in                        ;
+; top:cpu|decoder:dec|imm[17,19]                                        ; Merged with top:cpu|decoder:dec|imm[12]                       ;
+; Total Number of Removed Registers = 39                                ;                                                               ;
++-----------------------------------------------------------------------+---------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                           ;
-+---------------------------------------------------+---------------------------+-----------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+---------------------------------------------------+---------------------------+-----------------------------------------------------------------------+
-; top:cpu|instruction_memory:instrs|instruction[11] ; Stuck at GND              ; top:cpu|decoder:dec|rd[4],                                            ;
-;                                                   ; due to stuck port data_in ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[9], ;
-;                                                   ;                           ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[9]  ;
-+---------------------------------------------------+---------------------------+-----------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
++---------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register                                             ;
++---------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; top:cpu|instruction_memory:instrs|instruction[11] ; Stuck at GND              ; top:cpu|decoder:dec|rd[4], top:cpu|s4a_rd[4], top:cpu|s4b_rd[4], top:cpu|s5_rd[4], ;
+;                                                   ; due to stuck port data_in ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[14],             ;
+;                                                   ;                           ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[14]              ;
++---------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -344,12 +359,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 294   ;
-; Number of registers using Synchronous Clear  ; 96    ;
-; Number of registers using Synchronous Load   ; 64    ;
+; Total registers                              ; 781   ;
+; Number of registers using Synchronous Clear  ; 135   ;
+; Number of registers using Synchronous Load   ; 76    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 67    ;
+; Number of registers using Clock Enable       ; 384   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -402,6 +417,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[40] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[41] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[42] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[43] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[44] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[45] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[46] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0_bypass[47] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[0]  ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[1]  ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[2]  ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
@@ -445,6 +465,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[40] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[41] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
 ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[42] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[43] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[44] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[45] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[46] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
+; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1_bypass[47] ; top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1 ;
 +-----------------------------------------------------------------------+------------------------------------------------------------+
 
 
@@ -460,25 +485,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------+--------------------------------------------------------+------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|rs2_read[4]                                  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|rs1_read[10]                                 ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[0]                      ;
-; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[4]                      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|memb3                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory_write_interface:dmwi|true_write_value[10] ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value[21]                                                ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value[9]                                                 ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value[0]                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|display[2]                                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|data_memory_top:mem|data_memory:dm|write_value_delay[9]  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|rs1_read[12]                ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|registers:regs|rs2_read[4]                 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|program_counter:pc|s1a_instruction_addr[1] ;
+; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|program_counter:pc|s1a_instruction_addr[9] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|rs1_val[15]                                ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage3_top:s3|rs2_val[9]                                 ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value_async[25]                         ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value_async[9]                          ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |DE10_Nano_golden_top|top:cpu|stage5_top:s5|rd_value_async[5]                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_5io1:auto_generated ;
+; Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_0|altsyncram_d2k1:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                            ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------+
@@ -487,7 +514,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_5io1:auto_generated ;
+; Source assignments for top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1|altsyncram_d2k1:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                            ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------+
@@ -531,13 +558,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-----------------------------------------------------------+
 
 
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:cpu ;
++----------------+------------------+------------------+
+; Parameter Name ; Value            ; Type             ;
++----------------+------------------+------------------+
+; program_file   ; memfiles/fib.mif ; String           ;
++----------------+------------------+------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: top:cpu|instruction_memory:instrs ;
-+----------------------+-----------------------------+---------------------------+
-; Parameter Name       ; Value                       ; Type                      ;
-+----------------------+-----------------------------+---------------------------+
-; program_instructions ; code/common/testing/fib.mif ; String                    ;
-+----------------------+-----------------------------+---------------------------+
++----------------------+------------------+--------------------------------------+
+; Parameter Name       ; Value            ; Type                                 ;
++----------------------+------------------+--------------------------------------+
+; program_instructions ; memfiles/fib.mif ; String                               ;
++----------------------+------------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -581,7 +618,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                    ;
 ; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                    ;
 ; BYTE_SIZE                          ; 8                    ; Untyped                                                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                    ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
 ; INIT_FILE                          ; UNUSED               ; Untyped                                                    ;
@@ -597,7 +634,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                    ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                    ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                    ;
-; CBXI_PARAMETER                     ; altsyncram_5io1      ; Untyped                                                    ;
+; CBXI_PARAMETER                     ; altsyncram_d2k1      ; Untyped                                                    ;
 +------------------------------------+----------------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -642,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                    ;
 ; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                    ;
 ; BYTE_SIZE                          ; 8                    ; Untyped                                                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                    ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
 ; INIT_FILE                          ; UNUSED               ; Untyped                                                    ;
@@ -658,7 +695,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                    ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                    ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                    ;
-; CBXI_PARAMETER                     ; altsyncram_5io1      ; Untyped                                                    ;
+; CBXI_PARAMETER                     ; altsyncram_d2k1      ; Untyped                                                    ;
 +------------------------------------+----------------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -923,7 +960,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                          ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                  ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                             ;
 ; Entity Instance                           ; top:cpu|stage5_top:s5|registers:regs|altsyncram:register_values_rtl_1 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                             ;
 ;     -- WIDTH_A                            ; 32                                                                    ;
@@ -934,7 +971,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                          ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                  ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                             ;
 ; Entity Instance                           ; top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0     ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                             ;
 ;     -- WIDTH_A                            ; 8                                                                     ;
@@ -991,48 +1028,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+-------+----------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "top:cpu|control:c"                                                                         ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; stage[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 294                         ;
-;     ENA               ; 35                          ;
-;     ENA SCLR          ; 32                          ;
-;     SCLR SLD          ; 64                          ;
-;     plain             ; 163                         ;
+; arriav_ff             ; 781                         ;
+;     ENA               ; 250                         ;
+;     ENA SCLR          ; 94                          ;
+;     ENA SCLR SLD      ; 40                          ;
+;     SCLR              ; 1                           ;
+;     SLD               ; 36                          ;
+;     plain             ; 360                         ;
 ; arriav_io_obuf        ; 95                          ;
-; arriav_lcell_comb     ; 385                         ;
-;     arith             ; 143                         ;
-;         0 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 532                         ;
+;     arith             ; 110                         ;
 ;         1 data inputs ; 45                          ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 32                          ;
-;         5 data inputs ; 64                          ;
-;     extend            ; 7                           ;
-;         7 data inputs ; 7                           ;
-;     normal            ; 235                         ;
+;         5 data inputs ; 32                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 418                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 40                          ;
-;         4 data inputs ; 31                          ;
-;         5 data inputs ; 100                         ;
-;         6 data inputs ; 47                          ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 56                          ;
+;         5 data inputs ; 129                         ;
+;         6 data inputs ; 150                         ;
 ; boundary_port         ; 145                         ;
 ; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 2.38                        ;
+; Max LUT depth         ; 11.60                       ;
+; Average LUT depth     ; 4.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1051,70 +1080,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Tue Mar  5 11:11:27 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
+    Info: Processing started: Sat Mar  9 13:32:07 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/stage5_top.sv
-    Info (12023): Found entity 1: stage5_top File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/stage5_top.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/registers.sv
-    Info (12023): Found entity 1: registers File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/registers.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/program_counter.sv
-    Info (12023): Found entity 1: program_counter File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/program_counter.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/data_memory_read_interface.sv
-    Info (12023): Found entity 1: data_memory_read_interface File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/data_memory_read_interface.sv Line: 38
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory_write_interface.sv
-    Info (12023): Found entity 1: data_memory_write_interface File: C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_write_interface.sv Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory_top.sv
-    Info (12023): Found entity 1: data_memory_top File: C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_top.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory.sv
-    Info (12023): Found entity 1: data_memory File: C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage3/alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/Nick/Documents/EE469/Lab1/code/stage3/alu.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage2/decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/Nick/Documents/EE469/Lab1/code/stage2/decoder.sv Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file code/stage1/instruction_memory.sv
-    Info (12023): Found entity 1: instruction_memory File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/common/top.sv
-    Info (12023): Found entity 1: top File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file code/common/control.sv
-    Info (12023): Found entity 1: control File: C:/Users/Nick/Documents/EE469/Lab1/code/common/control.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file de10_nano_golden_top.v
-    Info (12023): Found entity 1: DE10_Nano_golden_top File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at data_memory_read_interface.sv(53): created implicit net for "correct_word" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/data_memory_read_interface.sv Line: 53
+    Info (12023): Found entity 1: DE10_Nano_golden_top File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file code/common/top.sv
+    Info (12023): Found entity 1: top File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/common/flush.sv
+    Info (12023): Found entity 1: flush File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/flush.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file code/common/bypass.sv
+    Info (12023): Found entity 1: bypass File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/bypass.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/stage5_top.sv
+    Info (12023): Found entity 1: stage5_top File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/stage5_top.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/registers.sv
+    Info (12023): Found entity 1: registers File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/registers.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage5/data_memory_read_interface.sv
+    Info (12023): Found entity 1: data_memory_read_interface File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/data_memory_read_interface.sv Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory_write_interface.sv
+    Info (12023): Found entity 1: data_memory_write_interface File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_write_interface.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory_top.sv
+    Info (12023): Found entity 1: data_memory_top File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_top.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage4/data_memory.sv
+    Info (12023): Found entity 1: data_memory File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage3/stage3_top.sv
+    Info (12023): Found entity 1: stage3_top File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/stage3_top.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage3/program_counter.sv
+    Info (12023): Found entity 1: program_counter File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/program_counter.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage3/alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/alu.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage2/decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage2/decoder.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file code/stage1/instruction_memory.sv
+    Info (12023): Found entity 1: instruction_memory File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at data_memory_read_interface.sv(53): created implicit net for "correct_word" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/data_memory_read_interface.sv Line: 53
 Info (12127): Elaborating entity "DE10_Nano_golden_top" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at DE10_Nano_golden_top.v(141): truncated value with size 32 to match size of target (16) File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 141
-Warning (10034): Output port "HDMI_TX_D" at DE10_Nano_golden_top.v(65) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-Warning (10034): Output port "ADC_CONVST" at DE10_Nano_golden_top.v(39) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 39
-Warning (10034): Output port "ADC_SCK" at DE10_Nano_golden_top.v(40) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 40
-Warning (10034): Output port "ADC_SDI" at DE10_Nano_golden_top.v(41) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 41
-Warning (10034): Output port "HDMI_TX_CLK" at DE10_Nano_golden_top.v(64) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 64
-Warning (10034): Output port "HDMI_TX_DE" at DE10_Nano_golden_top.v(66) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 66
-Warning (10034): Output port "HDMI_TX_HS" at DE10_Nano_golden_top.v(67) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 67
-Warning (10034): Output port "HDMI_TX_VS" at DE10_Nano_golden_top.v(69) has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 69
-Info (12128): Elaborating entity "top" for hierarchy "top:cpu" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 152
-Info (12128): Elaborating entity "control" for hierarchy "top:cpu|control:c" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 9
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "top:cpu|instruction_memory:instrs" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 13
-Warning (10850): Verilog HDL warning at instruction_memory.sv(18): number of words (22) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 18
-Warning (10030): Net "mem.data_a" at instruction_memory.sv(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 15
-Warning (10030): Net "mem.waddr_a" at instruction_memory.sv(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 15
-Warning (10030): Net "mem.we_a" at instruction_memory.sv(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 15
-Info (12128): Elaborating entity "decoder" for hierarchy "top:cpu|decoder:dec" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 26
-Info (12128): Elaborating entity "alu" for hierarchy "top:cpu|alu:arith" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 36
-Info (12128): Elaborating entity "data_memory_top" for hierarchy "top:cpu|data_memory_top:mem" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 45
-Info (12128): Elaborating entity "data_memory" for hierarchy "top:cpu|data_memory_top:mem|data_memory:dm" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_top.sv Line: 29
-Info (12128): Elaborating entity "data_memory_write_interface" for hierarchy "top:cpu|data_memory_top:mem|data_memory_write_interface:dmwi" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage4/data_memory_top.sv Line: 39
-Info (12128): Elaborating entity "stage5_top" for hierarchy "top:cpu|stage5_top:s5" File: C:/Users/Nick/Documents/EE469/Lab1/code/common/top.sv Line: 54
-Info (12128): Elaborating entity "data_memory_read_interface" for hierarchy "top:cpu|stage5_top:s5|data_memory_read_interface:dmri" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/stage5_top.sv Line: 17
-Warning (10036): Verilog HDL or VHDL warning at data_memory_read_interface.sv(53): object "correct_word" assigned a value but never read File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/data_memory_read_interface.sv Line: 53
-Warning (10230): Verilog HDL assignment warning at data_memory_read_interface.sv(53): truncated value with size 16 to match size of target (1) File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/data_memory_read_interface.sv Line: 53
-Info (12128): Elaborating entity "registers" for hierarchy "top:cpu|stage5_top:s5|registers:regs" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/stage5_top.sv Line: 34
-Info (12128): Elaborating entity "program_counter" for hierarchy "top:cpu|stage5_top:s5|program_counter:pc" File: C:/Users/Nick/Documents/EE469/Lab1/code/stage5/stage5_top.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at DE10_Nano_golden_top.v(141): truncated value with size 32 to match size of target (16) File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 141
+Warning (10034): Output port "HDMI_TX_D" at DE10_Nano_golden_top.v(65) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+Warning (10034): Output port "ADC_CONVST" at DE10_Nano_golden_top.v(39) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 39
+Warning (10034): Output port "ADC_SCK" at DE10_Nano_golden_top.v(40) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 40
+Warning (10034): Output port "ADC_SDI" at DE10_Nano_golden_top.v(41) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 41
+Warning (10034): Output port "HDMI_TX_CLK" at DE10_Nano_golden_top.v(64) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 64
+Warning (10034): Output port "HDMI_TX_DE" at DE10_Nano_golden_top.v(66) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 66
+Warning (10034): Output port "HDMI_TX_HS" at DE10_Nano_golden_top.v(67) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 67
+Warning (10034): Output port "HDMI_TX_VS" at DE10_Nano_golden_top.v(69) has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 69
+Info (12128): Elaborating entity "top" for hierarchy "top:cpu" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 152
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "top:cpu|instruction_memory:instrs" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 21
+Warning (10850): Verilog HDL warning at instruction_memory.sv(20): number of words (22) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 20
+Warning (10030): Net "mem.data_a" at instruction_memory.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 17
+Warning (10030): Net "mem.waddr_a" at instruction_memory.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 17
+Warning (10030): Net "mem.we_a" at instruction_memory.sv(17) has no driver or initial value, using a default initial value '0' File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 17
+Info (12128): Elaborating entity "decoder" for hierarchy "top:cpu|decoder:dec" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 41
+Info (12128): Elaborating entity "stage3_top" for hierarchy "top:cpu|stage3_top:s3" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 65
+Info (12128): Elaborating entity "alu" for hierarchy "top:cpu|stage3_top:s3|alu:arith" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/stage3_top.sv Line: 31
+Info (12128): Elaborating entity "program_counter" for hierarchy "top:cpu|stage3_top:s3|program_counter:pc" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage3/stage3_top.sv Line: 49
+Info (12128): Elaborating entity "data_memory_top" for hierarchy "top:cpu|data_memory_top:mem" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 92
+Info (12128): Elaborating entity "data_memory" for hierarchy "top:cpu|data_memory_top:mem|data_memory:dm" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_top.sv Line: 30
+Info (12128): Elaborating entity "data_memory_write_interface" for hierarchy "top:cpu|data_memory_top:mem|data_memory_write_interface:dmwi" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage4/data_memory_top.sv Line: 40
+Info (12128): Elaborating entity "stage5_top" for hierarchy "top:cpu|stage5_top:s5" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 110
+Warning (10036): Verilog HDL or VHDL warning at stage5_top.sv(33): object "write_rd" assigned a value but never read File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/stage5_top.sv Line: 33
+Info (12128): Elaborating entity "data_memory_read_interface" for hierarchy "top:cpu|stage5_top:s5|data_memory_read_interface:dmri" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/stage5_top.sv Line: 19
+Warning (10036): Verilog HDL or VHDL warning at data_memory_read_interface.sv(53): object "correct_word" assigned a value but never read File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/data_memory_read_interface.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at data_memory_read_interface.sv(53): truncated value with size 16 to match size of target (1) File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/data_memory_read_interface.sv Line: 53
+Info (12128): Elaborating entity "registers" for hierarchy "top:cpu|stage5_top:s5|registers:regs" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage5/stage5_top.sv Line: 39
+Info (12128): Elaborating entity "bypass" for hierarchy "top:cpu|bypass:b" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 119
+Info (12128): Elaborating entity "flush" for hierarchy "top:cpu|flush:f" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/common/top.sv Line: 123
+Info (286030): Timing-Driven Synthesis is running
 Warning (276020): Inferred RAM node "top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276020): Inferred RAM node "top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "top:cpu|instruction_memory:instrs|mem" is uninferred due to asynchronous read logic File: C:/Users/Nick/Documents/EE469/Lab1/code/stage1/instruction_memory.sv Line: 15
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Nick/Documents/EE469/Lab1/db/lab1.ram0_instruction_memory_9472934b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "top:cpu|instruction_memory:instrs|mem" is uninferred due to asynchronous read logic File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/code/stage1/instruction_memory.sv Line: 17
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/db/lab1.ram0_instruction_memory_46d7a58c.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (19000): Inferred 6 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "top:cpu|stage5_top:s5|registers:regs|register_values_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1131,7 +1168,6 @@ Info (19000): Inferred 6 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
     Info (276029): Inferred altsyncram megafunction from the following design logic: "top:cpu|stage5_top:s5|registers:regs|register_values_rtl_1" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 32
@@ -1147,7 +1183,6 @@ Info (19000): Inferred 6 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
     Info (276029): Inferred altsyncram megafunction from the following design logic: "top:cpu|data_memory_top:mem|data_memory:dm|memb3_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 8
@@ -1232,9 +1267,8 @@ Info (12133): Instantiated megafunction "top:cpu|stage5_top:s5|registers:regs|al
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5io1.tdf
-    Info (12023): Found entity 1: altsyncram_5io1 File: C:/Users/Nick/Documents/EE469/Lab1/db/altsyncram_5io1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d2k1.tdf
+    Info (12023): Found entity 1: altsyncram_d2k1 File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/db/altsyncram_d2k1.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0"
 Info (12133): Instantiated megafunction "top:cpu|data_memory_top:mem|data_memory:dm|altsyncram:memb3_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1254,165 +1288,164 @@ Info (12133): Instantiated megafunction "top:cpu|data_memory_top:mem|data_memory
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
     Info (12134): Parameter "RDCONTROL_REG_B" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m0q1.tdf
-    Info (12023): Found entity 1: altsyncram_m0q1 File: C:/Users/Nick/Documents/EE469/Lab1/db/altsyncram_m0q1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_m0q1 File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/db/altsyncram_m0q1.tdf Line: 28
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 45
-    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 46
-    Warning (13040): bidirectional pin "GPIO_0[0]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[1]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[2]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[3]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[4]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[5]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[6]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[7]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[8]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[9]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[10]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[11]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[12]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[13]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[14]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[15]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[16]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[17]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[18]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[19]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[20]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[21]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[22]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[23]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[24]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[25]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[26]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[27]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[28]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[29]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[30]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[31]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[32]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[33]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[34]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_0[35]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 54
-    Warning (13040): bidirectional pin "GPIO_1[0]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[1]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[2]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[3]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[4]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[5]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[6]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[7]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[8]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[9]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[10]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[11]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[12]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[13]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[14]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[15]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[16]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[17]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[18]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[19]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[20]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[21]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[22]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[23]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[24]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[25]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[26]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[27]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[28]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[29]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[30]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[31]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[32]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[33]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[34]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "GPIO_1[35]" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 55
-    Warning (13040): bidirectional pin "HDMI_I2C_SCL" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 58
-    Warning (13040): bidirectional pin "HDMI_I2C_SDA" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 59
-    Warning (13040): bidirectional pin "HDMI_I2S" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 60
-    Warning (13040): bidirectional pin "HDMI_LRCLK" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 61
-    Warning (13040): bidirectional pin "HDMI_MCLK" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 62
-    Warning (13040): bidirectional pin "HDMI_SCLK" has no driver File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 63
+    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 45
+    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 46
+    Warning (13040): bidirectional pin "GPIO_0[0]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[1]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[2]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[3]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[4]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[5]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[6]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[7]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[8]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[9]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[10]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[11]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[12]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[13]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[14]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[15]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[16]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[17]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[18]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[19]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[20]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[21]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[22]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[23]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[24]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[25]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[26]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[27]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[28]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[29]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[30]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[31]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[32]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[33]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[34]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_0[35]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 54
+    Warning (13040): bidirectional pin "GPIO_1[0]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[1]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[2]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[3]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[4]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[5]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[6]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[7]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[8]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[9]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[10]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[11]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[12]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[13]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[14]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[15]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[16]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[17]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[18]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[19]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[20]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[21]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[22]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[23]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[24]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[25]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[26]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[27]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[28]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[29]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[30]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[31]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[32]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[33]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[34]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "GPIO_1[35]" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 55
+    Warning (13040): bidirectional pin "HDMI_I2C_SCL" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 58
+    Warning (13040): bidirectional pin "HDMI_I2C_SDA" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 59
+    Warning (13040): bidirectional pin "HDMI_I2S" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 60
+    Warning (13040): bidirectional pin "HDMI_LRCLK" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 61
+    Warning (13040): bidirectional pin "HDMI_MCLK" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 62
+    Warning (13040): bidirectional pin "HDMI_SCLK" has no driver File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 63
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ADC_CONVST" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 39
-    Warning (13410): Pin "ADC_SCK" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 40
-    Warning (13410): Pin "ADC_SDI" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 41
-    Warning (13410): Pin "HDMI_TX_CLK" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 64
-    Warning (13410): Pin "HDMI_TX_D[0]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[1]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[2]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[3]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[4]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[5]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[6]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[7]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[8]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[9]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[10]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[11]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[12]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[13]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[14]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[15]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[16]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[17]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[18]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[19]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[20]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[21]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[22]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_D[23]" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 65
-    Warning (13410): Pin "HDMI_TX_DE" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 66
-    Warning (13410): Pin "HDMI_TX_HS" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 67
-    Warning (13410): Pin "HDMI_TX_VS" is stuck at GND File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 69
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Nick/Documents/EE469/Lab1/output_files/lab1.map.smsg
+    Warning (13410): Pin "ADC_CONVST" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 39
+    Warning (13410): Pin "ADC_SCK" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 40
+    Warning (13410): Pin "ADC_SDI" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 41
+    Warning (13410): Pin "HDMI_TX_CLK" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 64
+    Warning (13410): Pin "HDMI_TX_D[0]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[1]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[2]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[3]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[4]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[5]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[6]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[7]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[8]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[9]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[10]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[11]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[12]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[13]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[14]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[15]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[16]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[17]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[18]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[19]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[20]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[21]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[22]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_D[23]" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 65
+    Warning (13410): Pin "HDMI_TX_DE" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 66
+    Warning (13410): Pin "HDMI_TX_HS" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 67
+    Warning (13410): Pin "HDMI_TX_VS" is stuck at GND File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 69
+Info (144001): Generated suppressed messages file C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/output_files/lab1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_SDO" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 42
-    Warning (15610): No output dependent on input pin "FPGA_CLK2_50" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 50
-    Warning (15610): No output dependent on input pin "FPGA_CLK3_50" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 51
-    Warning (15610): No output dependent on input pin "HDMI_TX_INT" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 68
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 124
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 131
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 131
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 131
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Nick/Documents/EE469/Lab1/DE10_Nano_golden_top.v Line: 131
-Info (21057): Implemented 796 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "ADC_SDO" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 42
+    Warning (15610): No output dependent on input pin "FPGA_CLK2_50" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 50
+    Warning (15610): No output dependent on input pin "FPGA_CLK3_50" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 51
+    Warning (15610): No output dependent on input pin "HDMI_TX_INT" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 68
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 124
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 131
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 131
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 131
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/DE10_Nano_golden_top.v Line: 131
+Info (21057): Implemented 1384 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 39 output pins
     Info (21060): Implemented 95 bidirectional pins
-    Info (21061): Implemented 555 logic cells
+    Info (21061): Implemented 1143 logic cells
     Info (21064): Implemented 96 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 158 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Tue Mar  5 11:11:35 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 159 warnings
+    Info: Peak virtual memory: 4904 megabytes
+    Info: Processing ended: Sat Mar  9 13:32:16 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Nick/Documents/EE469/Lab1/output_files/lab1.map.smsg.
+The suppressed messages can be found in C:/Users/Nick/Documents/GitHub/RISC-V_7-Stage-Processor/output_files/lab1.map.smsg.
 
 

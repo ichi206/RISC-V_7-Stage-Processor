@@ -2,52 +2,100 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'counter[15]'
+Slack : -11.752
+TNS   : -4886.428
+
 Type  : Slow 1100mV 85C Model Setup 'FPGA_CLK1_50'
-Slack : 15.514
+Slack : -4.980
+TNS   : -37.560
+
+Type  : Slow 1100mV 85C Model Hold 'counter[15]'
+Slack : 0.325
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'FPGA_CLK1_50'
-Slack : 0.476
+Slack : 0.473
 TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter[15]'
+Slack : -3.166
+TNS   : -1558.908
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FPGA_CLK1_50'
-Slack : 8.842
-TNS   : 0.000
+Slack : -0.648
+TNS   : -13.541
+
+Type  : Slow 1100mV 0C Model Setup 'counter[15]'
+Slack : -12.181
+TNS   : -4823.301
 
 Type  : Slow 1100mV 0C Model Setup 'FPGA_CLK1_50'
-Slack : 15.349
+Slack : -5.007
+TNS   : -38.569
+
+Type  : Slow 1100mV 0C Model Hold 'counter[15]'
+Slack : 0.330
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'FPGA_CLK1_50'
 Slack : 0.504
 TNS   : 0.000
 
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter[15]'
+Slack : -3.166
+TNS   : -1537.565
+
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FPGA_CLK1_50'
-Slack : 8.779
-TNS   : 0.000
+Slack : -0.707
+TNS   : -12.881
+
+Type  : Fast 1100mV 85C Model Setup 'counter[15]'
+Slack : -5.661
+TNS   : -2411.113
 
 Type  : Fast 1100mV 85C Model Setup 'FPGA_CLK1_50'
-Slack : 17.414
+Slack : -3.557
+TNS   : -14.955
+
+Type  : Fast 1100mV 85C Model Hold 'counter[15]'
+Slack : 0.090
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'FPGA_CLK1_50'
-Slack : 0.162
+Slack : 0.188
 TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter[15]'
+Slack : -2.636
+TNS   : -726.831
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FPGA_CLK1_50'
-Slack : 8.748
-TNS   : 0.000
+Slack : -0.732
+TNS   : -8.172
+
+Type  : Fast 1100mV 0C Model Setup 'counter[15]'
+Slack : -5.205
+TNS   : -2118.267
 
 Type  : Fast 1100mV 0C Model Setup 'FPGA_CLK1_50'
-Slack : 17.546
+Slack : -3.029
+TNS   : -12.511
+
+Type  : Fast 1100mV 0C Model Hold 'counter[15]'
+Slack : 0.076
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'FPGA_CLK1_50'
-Slack : 0.151
+Slack : 0.181
 TNS   : 0.000
 
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter[15]'
+Slack : -2.636
+TNS   : -713.628
+
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FPGA_CLK1_50'
-Slack : 8.697
-TNS   : 0.000
+Slack : -0.790
+TNS   : -9.623
 
 ------------------------------------------------------------

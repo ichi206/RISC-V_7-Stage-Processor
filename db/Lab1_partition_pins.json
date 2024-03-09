@@ -36,11 +36,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "FPGA_CLK1_50",
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "FPGA_CLK1_50",
 					"strict" : false
 				}
 			]

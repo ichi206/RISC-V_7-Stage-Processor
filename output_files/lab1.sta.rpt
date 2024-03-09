@@ -1,5 +1,5 @@
 Timing Analyzer report for lab1
-Mon Mar  4 23:52:36 2024
+Sat Mar  9 13:37:57 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -9,53 +9,52 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   1. Legal Notice
   2. Timing Analyzer Summary
   3. Parallel Compilation
-  4. SDC File List
-  5. Clocks
-  6. Slow 1100mV 85C Model Fmax Summary
-  7. Timing Closure Recommendations
-  8. Slow 1100mV 85C Model Setup Summary
-  9. Slow 1100mV 85C Model Hold Summary
- 10. Slow 1100mV 85C Model Recovery Summary
- 11. Slow 1100mV 85C Model Removal Summary
- 12. Slow 1100mV 85C Model Minimum Pulse Width Summary
- 13. Slow 1100mV 85C Model Metastability Summary
- 14. Slow 1100mV 0C Model Fmax Summary
- 15. Slow 1100mV 0C Model Setup Summary
- 16. Slow 1100mV 0C Model Hold Summary
- 17. Slow 1100mV 0C Model Recovery Summary
- 18. Slow 1100mV 0C Model Removal Summary
- 19. Slow 1100mV 0C Model Minimum Pulse Width Summary
- 20. Slow 1100mV 0C Model Metastability Summary
- 21. Fast 1100mV 85C Model Setup Summary
- 22. Fast 1100mV 85C Model Hold Summary
- 23. Fast 1100mV 85C Model Recovery Summary
- 24. Fast 1100mV 85C Model Removal Summary
- 25. Fast 1100mV 85C Model Minimum Pulse Width Summary
- 26. Fast 1100mV 85C Model Metastability Summary
- 27. Fast 1100mV 0C Model Setup Summary
- 28. Fast 1100mV 0C Model Hold Summary
- 29. Fast 1100mV 0C Model Recovery Summary
- 30. Fast 1100mV 0C Model Removal Summary
- 31. Fast 1100mV 0C Model Minimum Pulse Width Summary
- 32. Fast 1100mV 0C Model Metastability Summary
- 33. Multicorner Timing Analysis Summary
- 34. Board Trace Model Assignments
- 35. Input Transition Times
- 36. Signal Integrity Metrics (Slow 1100mv 0c Model)
- 37. Signal Integrity Metrics (Slow 1100mv 85c Model)
- 38. Signal Integrity Metrics (Fast 1100mv 0c Model)
- 39. Signal Integrity Metrics (Fast 1100mv 85c Model)
- 40. Setup Transfers
- 41. Hold Transfers
- 42. Report TCCS
- 43. Report RSKM
- 44. Unconstrained Paths Summary
- 45. Clock Status Summary
- 46. Unconstrained Input Ports
- 47. Unconstrained Output Ports
- 48. Unconstrained Input Ports
- 49. Unconstrained Output Ports
- 50. Timing Analyzer Messages
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1100mV 85C Model Metastability Summary
+ 13. Slow 1100mV 0C Model Fmax Summary
+ 14. Slow 1100mV 0C Model Setup Summary
+ 15. Slow 1100mV 0C Model Hold Summary
+ 16. Slow 1100mV 0C Model Recovery Summary
+ 17. Slow 1100mV 0C Model Removal Summary
+ 18. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 19. Slow 1100mV 0C Model Metastability Summary
+ 20. Fast 1100mV 85C Model Setup Summary
+ 21. Fast 1100mV 85C Model Hold Summary
+ 22. Fast 1100mV 85C Model Recovery Summary
+ 23. Fast 1100mV 85C Model Removal Summary
+ 24. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 25. Fast 1100mV 85C Model Metastability Summary
+ 26. Fast 1100mV 0C Model Setup Summary
+ 27. Fast 1100mV 0C Model Hold Summary
+ 28. Fast 1100mV 0C Model Recovery Summary
+ 29. Fast 1100mV 0C Model Removal Summary
+ 30. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 31. Fast 1100mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 38. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths Summary
+ 44. Clock Status Summary
+ 45. Unconstrained Input Ports
+ 46. Unconstrained Output Ports
+ 47. Unconstrained Input Ports
+ 48. Unconstrained Output Ports
+ 49. Timing Analyzer Messages
 
 
 
@@ -101,14 +100,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.43        ;
+; Average used               ; 1.46        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.0%      ;
-;     Processor 3            ;   3.0%      ;
-;     Processor 4            ;   2.9%      ;
+;     Processor 2            ;   4.0%      ;
+;     Processor 3            ;   4.0%      ;
+;     Processor 4            ;   4.0%      ;
 ;     Processor 5            ;   2.9%      ;
 ;     Processor 6            ;   2.9%      ;
 ;     Processor 7            ;   2.9%      ;
@@ -117,31 +116,21 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 10           ;   2.9%      ;
 ;     Processor 11           ;   2.9%      ;
 ;     Processor 12           ;   2.9%      ;
-;     Processor 13           ;   2.8%      ;
-;     Processor 14           ;   2.8%      ;
-;     Processor 15           ;   2.8%      ;
+;     Processor 13           ;   2.9%      ;
+;     Processor 14           ;   2.9%      ;
+;     Processor 15           ;   2.9%      ;
 ;     Processor 16           ;   2.8%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------+
-; SDC File List                                                ;
-+--------------------------+--------+--------------------------+
-; SDC File Path            ; Status ; Read at                  ;
-+--------------------------+--------+--------------------------+
-; DE10_Nano_golden_top.sdc ; OK     ; Mon Mar  4 23:52:30 2024 ;
-+--------------------------+--------+--------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Clocks                                                                                                                                                                                     ;
-+--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
-; Clock Name   ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
-+--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
-; FPGA_CLK1_50 ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_CLK1_50 } ;
-; FPGA_CLK2_50 ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_CLK2_50 } ;
-; FPGA_CLK3_50 ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_CLK3_50 } ;
-+--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; Clock Name   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; counter[15]  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { counter[15] }  ;
+; FPGA_CLK1_50 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_CLK1_50 } ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
 
 
 +----------------------------------------------------+
@@ -149,7 +138,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+--------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name   ; Note ;
 +------------+-----------------+--------------+------+
-; 222.92 MHz ; 222.92 MHz      ; FPGA_CLK1_50 ;      ;
+; 78.42 MHz  ; 78.42 MHz       ; counter[15]  ;      ;
+; 246.06 MHz ; 246.06 MHz      ; FPGA_CLK1_50 ;      ;
 +------------+-----------------+--------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -160,13 +150,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+---------------------------------------+
-; Slow 1100mV 85C Model Setup Summary   ;
-+--------------+--------+---------------+
-; Clock        ; Slack  ; End Point TNS ;
-+--------------+--------+---------------+
-; FPGA_CLK1_50 ; 15.514 ; 0.000         ;
-+--------------+--------+---------------+
++----------------------------------------+
+; Slow 1100mV 85C Model Setup Summary    ;
++--------------+---------+---------------+
+; Clock        ; Slack   ; End Point TNS ;
++--------------+---------+---------------+
+; counter[15]  ; -11.752 ; -4886.428     ;
+; FPGA_CLK1_50 ; -4.980  ; -37.560       ;
++--------------+---------+---------------+
 
 
 +--------------------------------------+
@@ -174,7 +165,8 @@ HTML report is unavailable in plain text report export.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; FPGA_CLK1_50 ; 0.476 ; 0.000         ;
+; counter[15]  ; 0.325 ; 0.000         ;
+; FPGA_CLK1_50 ; 0.473 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -192,11 +184,12 @@ No paths to report.
 
 +---------------------------------------------------+
 ; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
-+--------------+-------+----------------------------+
-; Clock        ; Slack ; End Point TNS              ;
-+--------------+-------+----------------------------+
-; FPGA_CLK1_50 ; 8.842 ; 0.000                      ;
-+--------------+-------+----------------------------+
++--------------+--------+---------------------------+
+; Clock        ; Slack  ; End Point TNS             ;
++--------------+--------+---------------------------+
+; counter[15]  ; -3.166 ; -1558.908                 ;
+; FPGA_CLK1_50 ; -0.648 ; -13.541                   ;
++--------------+--------+---------------------------+
 
 
 -----------------------------------------------
@@ -205,23 +198,25 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                  ;
-+------------+-----------------+--------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name   ; Note ;
-+------------+-----------------+--------------+------+
-; 215.01 MHz ; 215.01 MHz      ; FPGA_CLK1_50 ;      ;
-+------------+-----------------+--------------+------+
++---------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                 ;
++-----------+-----------------+--------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name   ; Note ;
++-----------+-----------------+--------------+------+
+; 75.87 MHz ; 75.87 MHz       ; counter[15]  ;      ;
+; 232.4 MHz ; 232.4 MHz       ; FPGA_CLK1_50 ;      ;
++-----------+-----------------+--------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------------+
-; Slow 1100mV 0C Model Setup Summary    ;
-+--------------+--------+---------------+
-; Clock        ; Slack  ; End Point TNS ;
-+--------------+--------+---------------+
-; FPGA_CLK1_50 ; 15.349 ; 0.000         ;
-+--------------+--------+---------------+
++----------------------------------------+
+; Slow 1100mV 0C Model Setup Summary     ;
++--------------+---------+---------------+
+; Clock        ; Slack   ; End Point TNS ;
++--------------+---------+---------------+
+; counter[15]  ; -12.181 ; -4823.301     ;
+; FPGA_CLK1_50 ; -5.007  ; -38.569       ;
++--------------+---------+---------------+
 
 
 +--------------------------------------+
@@ -229,6 +224,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
+; counter[15]  ; 0.330 ; 0.000         ;
 ; FPGA_CLK1_50 ; 0.504 ; 0.000         ;
 +--------------+-------+---------------+
 
@@ -247,11 +243,12 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
-+--------------+-------+---------------------------+
-; Clock        ; Slack ; End Point TNS             ;
-+--------------+-------+---------------------------+
-; FPGA_CLK1_50 ; 8.779 ; 0.000                     ;
-+--------------+-------+---------------------------+
++--------------+--------+--------------------------+
+; Clock        ; Slack  ; End Point TNS            ;
++--------------+--------+--------------------------+
+; counter[15]  ; -3.166 ; -1537.565                ;
+; FPGA_CLK1_50 ; -0.707 ; -12.881                  ;
++--------------+--------+--------------------------+
 
 
 ----------------------------------------------
@@ -265,7 +262,8 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; FPGA_CLK1_50 ; 17.414 ; 0.000         ;
+; counter[15]  ; -5.661 ; -2411.113     ;
+; FPGA_CLK1_50 ; -3.557 ; -14.955       ;
 +--------------+--------+---------------+
 
 
@@ -274,7 +272,8 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; FPGA_CLK1_50 ; 0.162 ; 0.000         ;
+; counter[15]  ; 0.090 ; 0.000         ;
+; FPGA_CLK1_50 ; 0.188 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -292,11 +291,12 @@ No paths to report.
 
 +---------------------------------------------------+
 ; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
-+--------------+-------+----------------------------+
-; Clock        ; Slack ; End Point TNS              ;
-+--------------+-------+----------------------------+
-; FPGA_CLK1_50 ; 8.748 ; 0.000                      ;
-+--------------+-------+----------------------------+
++--------------+--------+---------------------------+
+; Clock        ; Slack  ; End Point TNS             ;
++--------------+--------+---------------------------+
+; counter[15]  ; -2.636 ; -726.831                  ;
+; FPGA_CLK1_50 ; -0.732 ; -8.172                    ;
++--------------+--------+---------------------------+
 
 
 -----------------------------------------------
@@ -310,7 +310,8 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; FPGA_CLK1_50 ; 17.546 ; 0.000         ;
+; counter[15]  ; -5.205 ; -2118.267     ;
+; FPGA_CLK1_50 ; -3.029 ; -12.511       ;
 +--------------+--------+---------------+
 
 
@@ -319,7 +320,8 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; FPGA_CLK1_50 ; 0.151 ; 0.000         ;
+; counter[15]  ; 0.076 ; 0.000         ;
+; FPGA_CLK1_50 ; 0.181 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -337,11 +339,12 @@ No paths to report.
 
 +--------------------------------------------------+
 ; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
-+--------------+-------+---------------------------+
-; Clock        ; Slack ; End Point TNS             ;
-+--------------+-------+---------------------------+
-; FPGA_CLK1_50 ; 8.697 ; 0.000                     ;
-+--------------+-------+---------------------------+
++--------------+--------+--------------------------+
+; Clock        ; Slack  ; End Point TNS            ;
++--------------+--------+--------------------------+
+; counter[15]  ; -2.636 ; -713.628                 ;
+; FPGA_CLK1_50 ; -0.790 ; -9.623                   ;
++--------------+--------+--------------------------+
 
 
 ----------------------------------------------
@@ -350,16 +353,18 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                          ;
-+------------------+--------+-------+----------+---------+---------------------+
-; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 15.349 ; 0.151 ; N/A      ; N/A     ; 8.697               ;
-;  FPGA_CLK1_50    ; 15.349 ; 0.151 ; N/A      ; N/A     ; 8.697               ;
-; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  FPGA_CLK1_50    ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-+------------------+--------+-------+----------+---------+---------------------+
++---------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                             ;
++------------------+-----------+-------+----------+---------+---------------------+
+; Clock            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -12.181   ; 0.076 ; N/A      ; N/A     ; -3.166              ;
+;  FPGA_CLK1_50    ; -5.007    ; 0.181 ; N/A      ; N/A     ; -0.790              ;
+;  counter[15]     ; -12.181   ; 0.076 ; N/A      ; N/A     ; -3.166              ;
+; Design-wide TNS  ; -4923.988 ; 0.0   ; 0.0      ; 0.0     ; -1572.449           ;
+;  FPGA_CLK1_50    ; -38.569   ; 0.000 ; N/A      ; N/A     ; -13.541             ;
+;  counter[15]     ; -4886.428 ; 0.000 ; N/A      ; N/A     ; -1558.908           ;
++------------------+-----------+-------+----------+---------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -613,8 +618,8 @@ No synchronizer chains to report.
 ; HDMI_LRCLK      ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; HDMI_MCLK       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; HDMI_SCLK       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; FPGA_CLK1_50    ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[0]          ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; FPGA_CLK1_50    ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 +-----------------+--------------+-----------------+-----------------+
 
 
@@ -1191,7 +1196,9 @@ No synchronizer chains to report.
 +--------------+--------------+----------+----------+----------+----------+
 ; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+--------------+----------+----------+----------+----------+
-; FPGA_CLK1_50 ; FPGA_CLK1_50 ; 136      ; 0        ; 0        ; 0        ;
+; counter[15]  ; counter[15]  ; 7979671  ; 0        ; 0        ; 0        ;
+; counter[15]  ; FPGA_CLK1_50 ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_CLK1_50 ; FPGA_CLK1_50 ; 135      ; 0        ; 0        ; 0        ;
 +--------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1201,7 +1208,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------+--------------+----------+----------+----------+----------+
 ; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+--------------+----------+----------+----------+----------+
-; FPGA_CLK1_50 ; FPGA_CLK1_50 ; 136      ; 0        ; 0        ; 0        ;
+; counter[15]  ; counter[15]  ; 7979671  ; 0        ; 0        ; 0        ;
+; counter[15]  ; FPGA_CLK1_50 ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_CLK1_50 ; FPGA_CLK1_50 ; 135      ; 0        ; 0        ; 0        ;
 +--------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1224,7 +1233,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 1     ; 1    ;
 ; Unconstrained Output Ports      ; 8     ; 8    ;
@@ -1232,16 +1241,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
-+----------------------------------------------------+
-; Clock Status Summary                               ;
-+--------------+--------------+------+---------------+
-; Target       ; Clock        ; Type ; Status        ;
-+--------------+--------------+------+---------------+
-; FPGA_CLK1_50 ; FPGA_CLK1_50 ; Base ; Constrained   ;
-; FPGA_CLK2_50 ; FPGA_CLK2_50 ; Base ; Constrained   ;
-; FPGA_CLK3_50 ; FPGA_CLK3_50 ; Base ; Constrained   ;
-; counter[15]  ;              ; Base ; Unconstrained ;
-+--------------+--------------+------+---------------+
++--------------------------------------------------+
+; Clock Status Summary                             ;
++--------------+--------------+------+-------------+
+; Target       ; Clock        ; Type ; Status      ;
++--------------+--------------+------+-------------+
+; FPGA_CLK1_50 ; FPGA_CLK1_50 ; Base ; Constrained ;
+; counter[15]  ; counter[15]  ; Base ; Constrained ;
++--------------+--------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -1300,98 +1307,114 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Mar  4 23:52:28 2024
-Info: Command: quartus_sta lab1 -c lab1
+    Info: Processing started: Sat Mar  9 13:37:42 2024
+Info: Command: quartus_sta Lab1 -c lab1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (332104): Reading SDC File: 'DE10_Nano_golden_top.sdc'
-Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332060): Node: counter[15] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[0] is being clocked by counter[15]
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab1.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name counter[15] counter[15]
+    Info (332105): create_clock -period 1.000 -name FPGA_CLK1_50 FPGA_CLK1_50
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 15.514
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -11.752
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.514               0.000 FPGA_CLK1_50 
-Info (332146): Worst-case hold slack is 0.476
+    Info (332119):   -11.752           -4886.428 counter[15] 
+    Info (332119):    -4.980             -37.560 FPGA_CLK1_50 
+Info (332146): Worst-case hold slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.476               0.000 FPGA_CLK1_50 
+    Info (332119):     0.325               0.000 counter[15] 
+    Info (332119):     0.473               0.000 FPGA_CLK1_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 8.842
+Info (332146): Worst-case minimum pulse width slack is -3.166
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.842               0.000 FPGA_CLK1_50 
+    Info (332119):    -3.166           -1558.908 counter[15] 
+    Info (332119):    -0.648             -13.541 FPGA_CLK1_50 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (332060): Node: counter[15] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[0] is being clocked by counter[15]
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 15.349
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -12.181
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.349               0.000 FPGA_CLK1_50 
-Info (332146): Worst-case hold slack is 0.504
+    Info (332119):   -12.181           -4823.301 counter[15] 
+    Info (332119):    -5.007             -38.569 FPGA_CLK1_50 
+Info (332146): Worst-case hold slack is 0.330
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+    Info (332119):     0.330               0.000 counter[15] 
     Info (332119):     0.504               0.000 FPGA_CLK1_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 8.779
+Info (332146): Worst-case minimum pulse width slack is -3.166
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.779               0.000 FPGA_CLK1_50 
+    Info (332119):    -3.166           -1537.565 counter[15] 
+    Info (332119):    -0.707             -12.881 FPGA_CLK1_50 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (332060): Node: counter[15] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[0] is being clocked by counter[15]
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 17.414
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.661
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    17.414               0.000 FPGA_CLK1_50 
-Info (332146): Worst-case hold slack is 0.162
+    Info (332119):    -5.661           -2411.113 counter[15] 
+    Info (332119):    -3.557             -14.955 FPGA_CLK1_50 
+Info (332146): Worst-case hold slack is 0.090
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.162               0.000 FPGA_CLK1_50 
+    Info (332119):     0.090               0.000 counter[15] 
+    Info (332119):     0.188               0.000 FPGA_CLK1_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 8.748
+Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.748               0.000 FPGA_CLK1_50 
+    Info (332119):    -2.636            -726.831 counter[15] 
+    Info (332119):    -0.732              -8.172 FPGA_CLK1_50 
 Info: Analyzing Fast 1100mV 0C Model
-Warning (332060): Node: counter[15] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register top:cpu|stage5_top:s5|program_counter:pc|instruction_addr[0] is being clocked by counter[15]
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 17.546
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.205
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    17.546               0.000 FPGA_CLK1_50 
-Info (332146): Worst-case hold slack is 0.151
+    Info (332119):    -5.205           -2118.267 counter[15] 
+    Info (332119):    -3.029             -12.511 FPGA_CLK1_50 
+Info (332146): Worst-case hold slack is 0.076
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.151               0.000 FPGA_CLK1_50 
+    Info (332119):     0.076               0.000 counter[15] 
+    Info (332119):     0.181               0.000 FPGA_CLK1_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 8.697
+Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.697               0.000 FPGA_CLK1_50 
+    Info (332119):    -2.636            -713.628 counter[15] 
+    Info (332119):    -0.790              -9.623 FPGA_CLK1_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5393 megabytes
-    Info: Processing ended: Mon Mar  4 23:52:36 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5392 megabytes
+    Info: Processing ended: Sat Mar  9 13:37:57 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:19
 
 

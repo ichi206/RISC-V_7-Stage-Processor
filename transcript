@@ -1,0 +1,196 @@
+# Reading C:/modelsim_ase/tcl/vsim/pref.tcl
+cd c:/users/nick/documents/github/RISC-V_7-Stage-Processor/code/common/testing
+do test_top.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:29 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage1/instruction_memory.sv 
+# -- Compiling package instruction_memory_sv_unit
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 15:01:29 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:29 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage2/decoder.sv 
+# -- Compiling package decoder_sv_unit
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 15:01:29 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:29 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage3/alu.sv 
+# -- Compiling package alu_sv_unit
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:01:29 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:29 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage3/program_counter.sv 
+# -- Compiling package program_counter_sv_unit
+# -- Compiling module program_counter
+# 
+# Top level modules:
+# 	program_counter
+# End time: 15:01:29 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:29 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage3/stage3_top.sv 
+# -- Compiling package stage3_top_sv_unit
+# -- Compiling module stage3_top
+# 
+# Top level modules:
+# 	stage3_top
+# End time: 15:01:29 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage4/data_memory.sv 
+# -- Compiling package data_memory_sv_unit
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage4/data_memory_write_interface.sv 
+# -- Compiling package data_memory_write_interface_sv_unit
+# -- Compiling module data_memory_write_interface
+# 
+# Top level modules:
+# 	data_memory_write_interface
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage4/data_memory_top.sv 
+# -- Compiling package data_memory_top_sv_unit
+# -- Compiling module data_memory_top
+# 
+# Top level modules:
+# 	data_memory_top
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage5/registers.sv 
+# -- Compiling package registers_sv_unit
+# -- Compiling module registers
+# 
+# Top level modules:
+# 	registers
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage5/data_memory_read_interface.sv 
+# -- Compiling package data_memory_read_interface_sv_unit
+# -- Compiling module data_memory_read_interface
+# 
+# Top level modules:
+# 	data_memory_read_interface
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../../stage5/stage5_top.sv 
+# -- Compiling package stage5_top_sv_unit
+# -- Compiling module stage5_top
+# 
+# Top level modules:
+# 	stage5_top
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../bypass.sv 
+# -- Compiling package bypass_sv_unit
+# -- Compiling module bypass
+# 
+# Top level modules:
+# 	bypass
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../flush.sv 
+# -- Compiling module flush
+# 
+# Top level modules:
+# 	flush
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 ../top.sv 
+# -- Compiling package top_sv_unit
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:01:30 on Mar 09,2024
+# vlog -reportprogress 300 test_top.sv 
+# -- Compiling module test_top
+# 
+# Top level modules:
+# 	test_top
+# End time: 15:01:30 on Mar 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work test_top 
+# Start time: 15:01:30 on Mar 09,2024
+# Loading sv_std.std
+# Loading work.test_top
+# Loading work.top_sv_unit
+# Loading work.top
+# Loading work.instruction_memory_sv_unit
+# Loading work.instruction_memory
+# Loading work.decoder_sv_unit
+# Loading work.decoder
+# Loading work.stage3_top_sv_unit
+# Loading work.stage3_top
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.program_counter_sv_unit
+# Loading work.program_counter
+# Loading work.data_memory_top_sv_unit
+# Loading work.data_memory_top
+# Loading work.data_memory_sv_unit
+# Loading work.data_memory
+# Loading work.data_memory_write_interface_sv_unit
+# Loading work.data_memory_write_interface
+# Loading work.stage5_top_sv_unit
+# Loading work.stage5_top
+# Loading work.data_memory_read_interface_sv_unit
+# Loading work.data_memory_read_interface
+# Loading work.registers_sv_unit
+# Loading work.registers
+# Loading work.bypass_sv_unit
+# Loading work.bypass
+# Loading work.flush
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Nick  Hostname: DESKTOP-S4P151C  ProcessID: 11816
+#           Attempting to use alternate WLF file "./wlfthwqy9f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthwqy9f
+# ** Error: (vish-4014) No objects found matching '/test_top/cpu/s4a_rs2_read'.
+# Executing ONERROR command at macro ./test_top_wave.do line 41
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : test_top.sv(18)
+#    Time: 60500 ps  Iteration: 1  Instance: /test_top
+# Break in Module test_top at test_top.sv line 18
