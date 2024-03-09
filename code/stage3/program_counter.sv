@@ -12,7 +12,7 @@ module program_counter
 
 	logic do_flush_logic;
 	word ia_plus4_logic, instruction_addr_logic;
-	assign ia_plus4_logic = s1a_instruction_addr + 4;
+	assign ia_plus4_logic = s3_instruction_addr + 4;
 	
 	always_comb begin
 		if (jump && valid) begin
